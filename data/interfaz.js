@@ -554,7 +554,13 @@ window.INTERFAZ={
     "as_faq_none": "No encontramos esa pregunta. Escríbenos con el formulario de contacto.",
     "as_more": "Más información",
     "as_disclaimer": "El asistente muestra la información publicada en este sitio. Las fechas y los requisitos pueden cambiar: confirma siempre en la convocatoria oficial. Tus respuestas no se guardan.",
-    "as_fab": "¿Dudas sobre movilidad?"
+    "as_fab": "¿Dudas sobre movilidad?",
+    "pr_read": "Leer el texto",
+    "pr_pdf": "Descargar PDF",
+    "pr_abstract": "Resumen",
+    "pr_keywords": "Palabras clave",
+    "pr_back": "← Producción científica",
+    "pr_cite": "Cómo citar"
   },
   "en": {
     "lang_name": "English",
@@ -1106,7 +1112,13 @@ window.INTERFAZ={
     "as_faq_none": "We could not find that question. Write to us using the contact form.",
     "as_more": "More information",
     "as_disclaimer": "The assistant shows the information published on this site. Dates and requirements may change: always check the official call. Your answers are not stored.",
-    "as_fab": "Questions about mobility?"
+    "as_fab": "Questions about mobility?",
+    "pr_read": "Read the text",
+    "pr_pdf": "Download PDF",
+    "pr_abstract": "Abstract",
+    "pr_keywords": "Keywords",
+    "pr_back": "← Research output",
+    "pr_cite": "How to cite"
   },
   "it": {
     "lang_name": "Italiano",
@@ -1658,7 +1670,13 @@ window.INTERFAZ={
     "as_faq_none": "Non abbiamo trovato questa domanda. Scrivici con il modulo di contatto.",
     "as_more": "Maggiori informazioni",
     "as_disclaimer": "L'assistente mostra le informazioni pubblicate su questo sito. Date e requisiti possono cambiare: verifica sempre nel bando ufficiale. Le tue risposte non vengono salvate.",
-    "as_fab": "Dubbi sulla mobilità?"
+    "as_fab": "Dubbi sulla mobilità?",
+    "pr_read": "Leggi il testo",
+    "pr_pdf": "Scarica il PDF",
+    "pr_abstract": "Abstract",
+    "pr_keywords": "Parole chiave",
+    "pr_back": "← Produzione scientifica",
+    "pr_cite": "Come citare"
   },
   "fr": {
     "lang_name": "Français",
@@ -2210,6 +2228,12 @@ window.INTERFAZ={
     "as_faq_none": "Nous n'avons pas trouvé cette question. Écrivez-nous via le formulaire de contact.",
     "as_more": "En savoir plus",
     "as_disclaimer": "L'assistant affiche les informations publiées sur ce site. Les dates et les conditions peuvent changer : vérifiez toujours dans l'appel officiel. Vos réponses ne sont pas enregistrées.",
-    "as_fab": "Des questions sur la mobilité ?"
+    "as_fab": "Des questions sur la mobilité ?",
+    "pr_read": "Lire le texte",
+    "pr_pdf": "Télécharger le PDF",
+    "pr_abstract": "Résumé",
+    "pr_keywords": "Mots-clés",
+    "pr_back": "← Production scientifique",
+    "pr_cite": "Comment citer"
   }
 };

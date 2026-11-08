@@ -204,6 +204,18 @@ section.view.active{display:block}
 .article{max-width:760px;display:grid;gap:22px}
 .article .content{display:grid;gap:1em;font-size:1.06rem}
 .article .content p{max-width:68ch}
+.pub-res{margin:.5em 0 0;font-size:.95rem;color:var(--muted,#555);max-width:70ch}
+.pub-acc{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.pub h3 a{color:inherit;text-decoration:none}.pub h3 a:hover{text-decoration:underline}
+.paper .paper-head h1{margin:.2em 0 .3em}
+.paper .paper-aut{margin:0;line-height:1.5}
+.paper .paper-abs{background:var(--soft,#f1f4f8);border-left:3px solid #6cc4ee;padding:16px 20px;border-radius:4px}
+.paper .paper-abs h2,.paper .paper-cita h2{font-size:1.05rem;margin:0 0 .5em}
+.paper .paper-abs p{margin:.4em 0;max-width:72ch}
+.paper .content h3{font-size:1.15rem;margin:.8em 0 0}
+.paper .paper-nota{border-top:1px solid var(--line,#ddd);padding-top:12px;max-width:72ch}
+.paper .paper-cita{border-top:1px solid var(--line,#ddd);padding-top:14px}
+.paper .paper-cita p{max-width:72ch;overflow-wrap:anywhere}
 .article .content blockquote{margin:.2em 0;max-width:64ch;padding:.15em 0 .15em 1.1em;border-left:3px solid #6cc4ee}
 .article .content blockquote.cita{font-style:italic;color:var(--muted,#555)}
 .article .content blockquote.dicho{border-left-color:#f6c544}
@@ -1187,6 +1199,10 @@ footer .social svg{width:16px;height:16px}
     <div class="wrap"><article class="article" id="post"></article></div>
   </section>
 
+  <section class="view" id="v-publicacion" data-view="publicacion">
+    <div class="wrap"><article class="article paper" id="pubDetalle"></article></div>
+  </section>
+
   <section class="view" id="v-testimonio" data-view="testimonio">
     <div class="wrap"><article class="article tmd-wrap" id="tmDetalle"></article></div>
   </section>
@@ -1609,16 +1625,16 @@ footer .social svg{width:16px;height:16px}
 </footer>
 
 <a class="as-fab" id="asFab" href="#asistente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-4 3.5V16H4z"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.3 2.4c-.5.2-.8.6-.8 1.1v.3"/><path d="M12 15h.01"/></svg><span data-i18n="as_fab"></span></a>
-<script src="data/interfaz.js?v=20261108f"></script>
-<script src="data/contenido.js?v=20261108f"></script>
-<script src="data/ofertas.js?v=20261108f"></script>
-<script src="data/comunidad.js?v=20261108f"></script>
-<script src="data/observatorio.js?v=20261108f"></script>
-<script src="data/mundo.js?v=20261108f"></script>
-<script src="data/observatorios.js?v=20261108f"></script>
-<script src="data/servicios.js?v=20261108f"></script>
-<script src="data/impacto.js?v=20261108f"></script>
-<script src="data/asistente.js?v=20261108f"></script>
+<script src="data/interfaz.js?v=20261108g"></script>
+<script src="data/contenido.js?v=20261108g"></script>
+<script src="data/ofertas.js?v=20261108g"></script>
+<script src="data/comunidad.js?v=20261108g"></script>
+<script src="data/observatorio.js?v=20261108g"></script>
+<script src="data/mundo.js?v=20261108g"></script>
+<script src="data/observatorios.js?v=20261108g"></script>
+<script src="data/servicios.js?v=20261108g"></script>
+<script src="data/impacto.js?v=20261108g"></script>
+<script src="data/asistente.js?v=20261108g"></script>
 <script>
 (function(){
 "use strict";
@@ -2176,6 +2192,29 @@ var personaHTML = function(p){
     (n ? '<a href="#' + slugId(n.slug) + '">' + esc(t("eq_source")) + '</a>' : '') + '</div>' : '') + '</div></div>';
 };
 /* ---------- Producción científica ---------- */
+var pubId = function(p){ return "publicacion-" + p.slug; };
+var recorta = function(x, n){ x = String(x || ""); if (x.length <= n) return x; var c = x.slice(0, n); return c.slice(0, c.lastIndexOf(" ")) + "…"; };
+var citaPub = function(p){
+  var ap = (p.autores || []).map(function(a){ var w = a.trim().split(/\s+/); var ape = w.length > 2 ? w.slice(-2).join(" ") : w.slice(-1)[0]; var ini = w.slice(0, w.length > 2 ? -2 : -1).map(function(x){ return x.charAt(0) + "."; }).join(" "); return ape + ", " + ini; });
+  var au = ap.length > 1 ? ap.slice(0, -1).join(", ") + " y " + ap[ap.length - 1] : ap[0] || "";
+  return au + " (" + (p.anio || "s. f.") + "). " + p.titulo + ". " + (p.tipo ? p.tipo + " presentada en " : "") + (p.revista_evento || "") + ". RIUDICC. https://riudicc.github.io/#" + pubId(p);
+};
+var pintarPublicacion = function(p){
+  var lg = p.idioma && p.idioma !== lang ? ' lang="' + esc(p.idioma) + '"' : '';
+  $("#pubDetalle").innerHTML = '<a class="back" href="#produccion">' + esc(t("pr_back")) + '</a>' +
+    '<header class="paper-head"' + lg + '><div class="kicker">' + esc(p.tipo || "") + ' · ' + esc(p.anio || "") + '</div>' +
+    '<h1>' + esc(p.titulo) + '</h1>' +
+    '<p class="paper-aut"><b>' + esc((p.autores || []).join(", ")) + '</b>' + (p.institucion ? '<br>' + esc(p.institucion) : '') + (p.revista_evento ? '<br><span class="muted">' + esc((p.tipo ? p.tipo + " · " : "") + p.revista_evento) + '</span>' : '') + '</p>' +
+    (p.pdf ? '<p><a class="btn primary" href="' + esc(p.pdf) + '" download>' + esc(t("pr_pdf")) + '</a></p>' : '') + '</header>' +
+    (p.resumen ? '<section class="paper-abs"' + lg + '><h2>' + esc(t("pr_abstract")) + '</h2><p>' + esc(p.resumen) + '</p>' +
+      ((p.palabras_clave || []).length ? '<p class="small"><b>' + esc(t("pr_keywords")) + ':</b> ' + esc(p.palabras_clave.join("; ")) + '</p>' : '') + '</section>' : '') +
+    '<div class="content"' + lg + '>' + limpiar(p.texto || "") + '</div>' +
+    (p.nota ? '<p class="small muted paper-nota"' + lg + '><i>' + esc(p.nota) + '</i></p>' : '') +
+    '<div class="paper-cita"><h2>' + esc(t("pr_cite")) + '</h2><p class="small">' + esc(citaPub(p)) + '</p>' +
+    (p.pdf ? '<p><a class="btn ghost" href="' + esc(p.pdf) + '" download>' + esc(t("pr_pdf")) + '</a></p>' : '') + '</div>';
+  return p.titulo;
+};
+
 var pintarProduccion = function(){
   var P = (C.produccion || []).slice().sort(function(a, b){ return (b.anio || 0) - (a.anio || 0); });
   if (!P.length){ $("#pubs").innerHTML = '<div class="empty"><h3>' + esc(t("pr_empty_h")) + '</h3><p class="muted">' + t("pr_empty_p") + '</p></div>'; return; }
@@ -2185,9 +2224,12 @@ var pintarProduccion = function(){
     (Object.keys(temas).length ? '<div class="panel"><h3>' + esc(t("pr_topics")) + '</h3><p class="small muted">' + esc(t("pr_topics_intro")) + '</p><div class="bars">' + barras(temas, null, function(){ return "var(--mint)"; }) + '</div></div>' : '') + '</div>' +
     '<div class="pubs" style="margin-top:20px">' + P.map(function(p){
       return '<div class="pub"' + (p.idioma && p.idioma !== lang ? ' lang="' + esc(p.idioma) + '"' : '') + '><div class="meta"><span class="chip">' + esc(p.tipo || "") + '</span><span>' + esc(p.anio || "") + '</span></div>' +
-        '<h3>' + esc(p.titulo) + '</h3><div class="small muted">' + esc((p.autores || []).join(", ")) + (p.revista_evento ? ' · <i>' + esc(p.revista_evento) + '</i>' : '') + '</div>' +
+        '<h3>' + (p.texto ? '<a href="#' + pubId(p) + '">' + esc(p.titulo) + '</a>' : esc(p.titulo)) + '</h3><div class="small muted">' + esc((p.autores || []).join(", ")) + (p.revista_evento ? ' · <i>' + esc(p.revista_evento) + '</i>' : '') + '</div>' +
+        (p.resumen ? '<p class="pub-res">' + esc(recorta(p.resumen, 260)) + '</p>' : '') +
         ((p.temas || []).length ? '<div class="tags">' + p.temas.map(function(x){ return '<span class="chip">' + esc(x) + '</span>'; }).join("") + '</div>' : '') +
-        (p.enlace ? '<div><a href="' + esc(p.enlace) + '" target="_blank" rel="noopener">' + esc(t("pr_open")) + '</a></div>' : '') + '</div>';
+        '<div class="pub-acc">' + (p.texto ? '<a class="btn primary" href="#' + pubId(p) + '">' + esc(t("pr_read")) + '</a>' : '') +
+        (p.pdf ? '<a class="btn ghost" href="' + esc(p.pdf) + '" download>' + esc(t("pr_pdf")) + '</a>' : '') +
+        (p.enlace ? '<a href="' + esc(p.enlace) + '" target="_blank" rel="noopener">' + esc(t("pr_open")) + '</a>' : '') + '</div></div>';
     }).join("") + '</div>';
 };
 
@@ -2797,7 +2839,7 @@ document.addEventListener("click", function(e){
 
 /* ---------- Navegación por anclas ---------- */
 var VISTAS = ["inicio", "red", "paquetes", "impacto", "asistente", "noticias", "blog", "convocatorias", "observatorio", "produccion", "testimonios", "contacto", "servicios", "inclusion", "guia", "terminos", "creditos", "privacidad"];
-var PADRE = {noticia: "noticias", entrada: "blog", testimonio: "testimonios"};
+var PADRE = {noticia: "noticias", entrada: "blog", testimonio: "testimonios", publicacion: "produccion"};
 var TITULOS = {red: "nav_red", equipo: "nav_equipo", paquetes: "nav_paquetes", impacto: "nav_impacto", asistente: "as_title", noticias: "nav_noticias", blog: "nav_blog", convocatorias: "nav_convocatorias", observatorio: "nav_cifras", produccion: "nav_produccion", testimonios: "nav_testimonios", redes: "nav_redes", participa: "nav_participa", contacto: "nav_contacto", servicios: "nav_servicios", inclusion: "nav_inclusion", guia: "nav_guia", terminos: "tm_title", creditos: "cr_title", privacidad: "nav_privacidad", noencontrada: "nf_title"};
 function mostrar(sinScroll){
   var h = (location.hash || "#inicio").slice(1) || "inicio", vista = h, titulo = "", ancla = null;
@@ -2820,6 +2862,9 @@ function mostrar(sinScroll){
   } else if (h.indexOf("testimonio-") === 0){
     var tm = (C.testimonios || []).filter(function(x){ return x.permiso && tmId(x) === h; })[0];
     if (tm){ vista = "testimonio"; titulo = pintarTestimonio(tm); } else vista = "noencontrada";
+  } else if (h.indexOf("publicacion-") === 0){
+    var pb = (C.produccion || []).filter(function(x){ return x.texto && pubId(x) === h; })[0];
+    if (pb){ vista = "publicacion"; titulo = pintarPublicacion(pb); } else vista = "noencontrada";
   } else if (h.indexOf("blog-") === 0){
     var b = entradas().filter(function(x){ return blogId(x.slug) === h; })[0];
     if (b){ vista = "entrada"; titulo = pintarEntrada(b); } else vista = "noencontrada";

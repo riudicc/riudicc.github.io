@@ -88,6 +88,10 @@ Copia una entrada existente, pégala justo después de `window.OFERTAS=[` y camb
 - Solo se muestran las menciones que tienen título e imagen.
 - La imagen va en `img/menciones/`. Una captura de la publicación sirve.
 
+### Añadir una publicación (`data/comunidad.js` → `produccion`)
+
+Sube el PDF a `docs/publicaciones/` y copia una entrada existente. Campos: `slug` (único, sin espacios), `tipo` (Artículo, Ponencia, Conferencia, Discurso…), `anio`, `titulo`, `autores` (lista), `institucion`, `revista_evento`, `temas` (2 o 3, para la «Huella temática»), `resumen`, `palabras_clave`, `texto` (párrafos en HTML: `<p>…</p>`, subtítulos con `<h3>`), `nota` y `pdf`. Si solo hay enlace externo, usa `enlace` en lugar de `texto` y `pdf`.
+
 ### Textos de la interfaz (`data/interfaz.js`)
 
 Cada texto aparece cuatro veces, una por idioma (`es`, `en`, `it`, `fr`). Si cambias un texto, cámbialo en los cuatro.
