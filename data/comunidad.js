@@ -229,6 +229,22 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
+   "nombre": "Madeleine Benfeldt",
+   "institucion": "universidad_san_carlos_guatemala",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
+   "confirmado": false
+  },
+  {
+   "nombre": "Zaida Vernon",
+   "institucion": "universidad_san_carlos_guatemala",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
+   "confirmado": false
+  },
+  {
    "nombre": "Alix Van Zandt",
    "institucion": "universidad_valle_guatemala",
    "cargo": {
