@@ -73,7 +73,7 @@ Copia una entrada existente, pégala justo después de `window.OFERTAS=[` y camb
 
 1. Consigue **por escrito** la autorización de la persona para publicar su nombre, su texto y su foto.
 2. Sube la foto a `img/testimonios/`.
-3. Copia la entrada de un testimonio existente y cambia `nombre`, `institucion`, `carrera`, `movilidad`, `texto` (resumen), `completo` (párrafos), `consejo`, `foto` y `foto_alt`.
+3. Copia la entrada de un testimonio existente y cambia `nombre`, `institucion`, `carrera`, `movilidad`, `texto` (resumen), `completo` (párrafos), `consejo`, `foto` y `foto_alt`. Si la persona sale pequeña en la tarjeta, `foto_posicion` (por ejemplo `"50% 80%"`) mueve el encuadre hacia abajo.
 4. Deja `"permiso": true` solo si tienes esa autorización.
 
 ### Añadir una mención en redes (`data/comunidad.js` → `menciones`)
