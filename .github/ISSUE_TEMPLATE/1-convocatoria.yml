@@ -1,0 +1,32 @@
+name: Nueva convocatoria o beca
+description: Propón una convocatoria para el tablón de movilidad.
+title: "[Convocatoria] "
+labels: ["convocatoria"]
+body:
+  - type: markdown
+    attributes:
+      value: "Gracias por compartirla. El equipo la revisa antes de publicarla."
+  - type: input
+    id: titulo
+    attributes: {label: Nombre de la convocatoria, placeholder: "Becas Fundación Carolina 2027 – Doctorado"}
+    validations: {required: true}
+  - type: input
+    id: entidad
+    attributes: {label: Quién la ofrece}
+    validations: {required: true}
+  - type: input
+    id: enlace
+    attributes: {label: Enlace oficial, placeholder: "https://"}
+    validations: {required: true}
+  - type: input
+    id: fecha
+    attributes: {label: Fecha límite, description: "AAAA-MM-DD. Si abre cada año sin fecha fija, explica cuándo suele abrir."}
+  - type: dropdown
+    id: nivel
+    attributes: {label: Nivel, options: [Grado, Postgrado, Investigadores, Personal, Todos]}
+  - type: input
+    id: pais
+    attributes: {label: País de destino}
+  - type: textarea
+    id: detalles
+    attributes: {label: Qué cubre y requisitos principales}

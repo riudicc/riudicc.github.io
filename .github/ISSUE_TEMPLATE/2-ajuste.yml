@@ -1,0 +1,16 @@
+name: Corrección o ajuste en el sitio
+description: Un error, un texto que cambiar, un enlace roto o una idea de mejora.
+title: "[Ajuste] "
+labels: ["ajuste"]
+body:
+  - type: input
+    id: donde
+    attributes: {label: "¿En qué página o sección?", placeholder: "Por ejemplo: Convocatorias, Guía, pie de página…"}
+    validations: {required: true}
+  - type: textarea
+    id: que
+    attributes: {label: "¿Qué hay que cambiar?", description: "Si es un texto, copia cómo está y cómo debería quedar. Puedes pegar una captura."}
+    validations: {required: true}
+  - type: dropdown
+    id: idioma
+    attributes: {label: Idioma, multiple: true, options: [Español, English, Italiano, Français]}

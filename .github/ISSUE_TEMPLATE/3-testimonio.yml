@@ -1,0 +1,27 @@
+name: Testimonio de movilidad
+description: Propón un testimonio de estudiante, docente o personal.
+title: "[Testimonio] "
+labels: ["testimonio"]
+body:
+  - type: markdown
+    attributes:
+      value: "No adjuntes aquí fotos ni documentos personales. El equipo pedirá la foto y la autorización por correo."
+  - type: input
+    id: nombre
+    attributes: {label: Nombre de la persona}
+    validations: {required: true}
+  - type: input
+    id: movilidad
+    attributes: {label: "Universidad de origen, destino, programa y fechas"}
+    validations: {required: true}
+  - type: textarea
+    id: texto
+    attributes: {label: Texto del testimonio}
+    validations: {required: true}
+  - type: checkboxes
+    id: permiso
+    attributes:
+      label: Autorización
+      options:
+        - label: La persona ha autorizado por escrito publicar su nombre, su texto y su foto.
+          required: true

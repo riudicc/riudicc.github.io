@@ -92,6 +92,14 @@ Copia una entrada existente, pégala justo después de `window.OFERTAS=[` y camb
 
 Cada texto aparece cuatro veces, una por idioma (`es`, `en`, `it`, `fr`). Si cambias un texto, cámbialo en los cuatro.
 
+## Cómo colaborar
+
+- **Sin saber de código:** en la pestaña **Issues › New issue** hay formularios para proponer una convocatoria, un ajuste, un testimonio o una mención. El equipo los revisa y los publica.
+- **Con cuenta de GitHub:** abre el archivo, pulsa el lápiz, haz el cambio y elige **Propose changes**. El cambio queda pendiente hasta que alguien del equipo lo aprueba.
+- **Equipo editor:** quienes tienen permiso de escritura pueden editar directamente, siguiendo las instrucciones de arriba.
+
+Normas: no publicar datos personales sin autorización escrita, ni documentos internos del proyecto (diagnósticos, entregables o actas) sin aprobación de la coordinación.
+
 ## Publicación
 
 El sitio se publica con **GitHub Pages**: *Settings › Pages › Deploy from a branch › `main` / root*.

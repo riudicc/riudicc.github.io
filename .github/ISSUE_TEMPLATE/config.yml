@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Escribir a RIUDICC
+    url: mailto:info@riudicc.org
+    about: Para consultas que no son cambios en el sitio.

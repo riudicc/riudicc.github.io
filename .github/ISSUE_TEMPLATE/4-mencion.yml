@@ -1,0 +1,18 @@
+name: Mención en redes
+description: Una publicación de una universidad u otra cuenta que menciona a RIUDICC.
+title: "[Mención] "
+labels: ["mencion"]
+body:
+  - type: input
+    id: url
+    attributes: {label: Enlace a la publicación, placeholder: "https://"}
+    validations: {required: true}
+  - type: dropdown
+    id: red
+    attributes: {label: Red, options: [LinkedIn, Facebook, Instagram]}
+  - type: input
+    id: autor
+    attributes: {label: Quién la publicó}
+  - type: input
+    id: titulo
+    attributes: {label: Título o primera frase}
