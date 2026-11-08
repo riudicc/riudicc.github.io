@@ -100,6 +100,8 @@ Cada texto aparece cuatro veces, una por idioma (`es`, `en`, `it`, `fr`). Si cam
 
 Normas: no publicar datos personales sin autorización escrita, ni documentos internos del proyecto (diagnósticos, entregables o actas) sin aprobación de la coordinación.
 
+**Caché:** GitHub Pages guarda cada archivo hasta 10 minutos en el navegador de quien visita el sitio, así que un cambio puede tardar ese tiempo en verse. Para verlo al instante, recarga con **Ctrl + F5**. Si cambias `index.html` y también algún archivo de `data/`, sube el número `?v=` de las líneas `<script src="data/…">` al final de `index.html`.
+
 ## Publicación
 
 El sitio se publica con **GitHub Pages**: *Settings › Pages › Deploy from a branch › `main` / root*.
