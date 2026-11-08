@@ -833,8 +833,8 @@ header.top a:focus-visible,header.top button:focus-visible{outline:2px solid #ff
 @media (max-width:400px){ .eu-top span{max-width:78px} }
 /* Portada de borde a borde, pegada a la barra */
 #v-inicio{margin-top:-72px}
-.banner.full{border-radius:0;border:0;width:100%;height:clamp(200px,34vw,480px);margin:0 0 64px;max-height:none}
-.banner.full img{object-position:center 45%}
+.banner.full{border-radius:0;border:0;width:100%;height:auto;aspect-ratio:480.8/214.6;max-height:none;margin:0 0 64px;background:#6bcffb}
+.banner.full img{object-position:center bottom}
 #v-inicio .wrap > .banner{display:none}
 
 .langs-m{display:none}
@@ -1082,7 +1082,7 @@ footer .social svg{width:16px;height:16px}
 
 <main>
   <section class="view" id="v-inicio" data-view="inicio">
-    <div class="banner full"><img src="img/portada.jpg" alt="" width="1600" height="720"></div>
+    <div class="banner full"><img src="img/portada.svg" alt="" width="1600" height="714"></div>
     <nav class="qnav" data-i18n-aria="qn_aria"><div class="wrap qnav-row">
       <a class="qn" href="#red" style="--qc:#9fc533"><span class="qn-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.6-3.3 3-5.2 6-5.2s5.4 1.9 6 5.2"/><circle cx="17" cy="9" r="2.4"/><path d="M15.8 14.2c2.6-.3 4.6 1.3 5.2 4.3"/></svg></span><span class="qn-t" data-i18n="qn_about_t"></span><span class="qn-p" data-i18n="qn_about_p"></span><span class="qn-more"><span data-i18n="qn_more"></span> →</span></a>
       <a class="qn" href="#observatorio" style="--qc:#6fafab"><span class="qn-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5M12 3.5C9.6 5.9 8.5 8.7 8.5 12s1.1 6.1 3.5 8.5"/></svg></span><span class="qn-t" data-i18n="qn_obs_t"></span><span class="qn-p" data-i18n="qn_obs_p"></span><span class="qn-more"><span data-i18n="qn_more"></span> →</span></a>
