@@ -90,7 +90,7 @@ Copia una entrada existente, pégala justo después de `window.OFERTAS=[` y camb
 
 ### Añadir una publicación (`data/comunidad.js` → `produccion`)
 
-Sube el PDF a `docs/publicaciones/` y copia una entrada existente. Campos: `slug` (único, sin espacios), `tipo` (Artículo, Ponencia, Conferencia, Discurso…), `anio`, `titulo`, `autores` (lista), `institucion`, `revista_evento`, `temas` (2 o 3, para la «Huella temática»), `resumen`, `palabras_clave`, `texto` (párrafos en HTML: `<p>…</p>`, subtítulos con `<h3>`), `nota` y `pdf`. Si solo hay enlace externo, usa `enlace` en lugar de `texto` y `pdf`.
+Sube el PDF a `docs/publicaciones/` y copia una entrada existente. Campos: `slug` (único, sin espacios), `tipo` (Artículo, Ponencia, Conferencia, Discurso…), `anio`, `titulo`, `autores` (lista), `autores_cita` (como deben aparecer al citar, p. ej. `"Ruiz San Román, J. A."`), `institucion`, `revista_evento`, `temas` (2 o 3, para la «Huella temática»), `resumen`, `palabras_clave`, `texto` (párrafos en HTML: `<p>…</p>`, subtítulos con `<h3>`), `nota` y `pdf`. Si solo hay enlace externo, usa `enlace` en lugar de `texto` y `pdf`.
 
 ### Textos de la interfaz (`data/interfaz.js`)
 

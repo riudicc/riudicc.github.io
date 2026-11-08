@@ -333,6 +333,10 @@ window.COMUNIDAD={
     "José Antonio Ruiz San Román",
     "Carmen Salgado Santamaría"
    ],
+   "autores_cita": [
+    "Ruiz San Román, J. A.",
+    "Salgado Santamaría, C."
+   ],
    "institucion": "Universidad Complutense de Madrid (UCM)",
    "revista_evento": "Jornadas RIUDICC, 28 de octubre de 2026",
    "idioma": "es",
@@ -364,6 +368,9 @@ window.COMUNIDAD={
    "titulo": "La persona: el seguimiento como sostén de la internacionalización universitaria",
    "autores": [
     "Suany Rosario"
+   ],
+   "autores_cita": [
+    "Rosario, S."
    ],
    "institucion": "Universidad Autónoma de Santo Domingo (UASD)",
    "revista_evento": "Jornada RIUDICC, 20 de julio de 2026",
