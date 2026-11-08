@@ -302,9 +302,7 @@ window.COMUNIDAD={
   {
    "nombre": "Emilio Mínguez Torres",
    "institucion": "universidad_caribe_unicaribe",
-   "cargo": {
-    "es": "Rector"
-   },
+   "cargo": {},
    "correo": "",
    "fuente": "segundo-encuentro",
    "confirmado": false
