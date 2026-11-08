@@ -2124,7 +2124,7 @@ var pintarTestimonio = function(x){
     '<div class="tmd-txt"><div class="tm-meta">' + esc([i ? nombrePais(i.paisCode, i.pais) : x.pais, ix ? ix.name : x.institucion].filter(Boolean).join(" · ")) + '</div>' +
     '<h1>' + esc(x.nombre) + '</h1>' + ((x.carrera || x.rol) ? '<div class="muted">' + esc(x.carrera || x.rol) + '</div>' : '') +
     (x.movilidad ? '<p class="small tmd-mov">' + esc(x.movilidad) + '</p>' : '') +
-    '<div class="content"' + lg + '>' + [x.texto].concat(x.completo || []).map(function(q){ return '<p>' + esc(q) + '</p>'; }).join("") +
+    '<div class="content"' + lg + '>' + (x.parrafos || [x.texto].concat(x.completo || [])).map(function(q){ return '<p>' + esc(q) + '</p>'; }).join("") +
     (x.consejo ? '<p class="tm-advice"><b>' + esc(t("t_advice")) + '</b> ' + esc(x.consejo) + '</p>' : '') + '</div>' +
     '<p class="small muted">' + esc(t("t_foot")) + '</p><a class="btn ghost" href="#tForm">' + esc(t("t_share_btn")) + '</a></div></div>';
   return x.nombre;
@@ -2144,7 +2144,7 @@ var pintarTestimonios = function(){
   var V = T.filter(function(x){ var i = instDe(x); return !filtroTm || (i && i.paisCode === filtroTm); });
   $("#quotes").innerHTML = V.length ? '<div class="tm-grid">' + V.map(function(x, k){
     var i = instDe(x), ix = i ? tx(i) : null, sigla = ix ? ix.shortName : (x.institucion || "");
-    var largo = (x.completo && x.completo.length) || x.consejo;
+    var largo = (x.parrafos && x.parrafos.length) || (x.completo && x.completo.length) || x.consejo;
     var abre = largo ? '<a class="tm tm-link" href="#' + tmId(x) + '"' : '<article class="tm"', cierra = largo ? '</a>' : '</article>';
     return abre + (x.idioma && x.idioma !== lang ? ' lang="' + esc(x.idioma) + '"' : '') + '><div class="tm-foto' + (x.foto && x.foto_vertical ? ' vert' : '') + '">' +
       (x.foto ? '<img src="' + esc(x.foto) + '" alt="' + esc(x.foto_alt || x.nombre) + '" loading="lazy"' + (x.foto_posicion ? ' style="object-position:' + esc(x.foto_posicion) + '"' : '') + '>' : ilustracion((x.nombre || "") + sigla + k)) +

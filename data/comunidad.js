@@ -352,8 +352,8 @@ window.COMUNIDAD={
    "carrera": "Ingeniería Química",
    "movilidad": "Erasmus+ · Un semestre en INSA Rouen Normandie (Francia), de enero a mayo de 2026",
    "texto": "Vivir durante seis meses en Francia, realizando un intercambio académico en INSA Rouen, ha sido una de las experiencias más increíbles y enriquecedoras de mi vida.",
-   "completo": [
-    "No solo significó estudiar en una institución diferente, sino también salir de mi país por primera vez, enfrentarme a un entorno completamente nuevo y aprender a desenvolverme en una cultura distinta a la mía.",
+   "parrafos": [
+    "Vivir durante seis meses en Francia, realizando un intercambio académico en INSA Rouen, ha sido una de las experiencias más increíbles y enriquecedoras de mi vida. No solo significó estudiar en una institución diferente, sino también salir de mi país por primera vez, enfrentarme a un entorno completamente nuevo y aprender a desenvolverme en una cultura distinta a la mía.",
     "Desde el primer momento, todo representó un aprendizaje. Adaptarme al clima, que era muy diferente al que estaba acostumbrada, conocer personas de distintas nacionalidades, descubrir nuevas costumbres y experimentar una forma de vida diferente hizo que cada día fuera una oportunidad para aprender algo nuevo.",
     "Tuve la oportunidad de conocer distintas ciudades, disfrutar de su arquitectura, su historia, su gastronomía y de todo lo que hace especial a la cultura francesa. Cada lugar que visité me dejó recuerdos únicos y me permitió apreciar la riqueza cultural que existe más allá de nuestras fronteras. También fue muy interesante conocer el sistema educativo, la dinámica de las clases y la manera en que se desarrolla la vida estudiantil en otro país.",
     "Sin duda, una de las cosas más bonitas fue compartir con personas de diferentes culturas, intercambiar ideas, conocer otras perspectivas y darme cuenta de que, aunque podamos tener costumbres y formas de pensar distintas, siempre hay algo nuevo que podemos aprender de los demás.",
@@ -376,8 +376,8 @@ window.COMUNIDAD={
    "carrera": "Ingeniería Química",
    "movilidad": "Erasmus+ · Un semestre en INSA Rouen Normandie (Francia), de enero a mayo de 2026",
    "texto": "Mi experiencia de movilidad fue profundamente transformadora, tanto a nivel personal como académico.",
-   "completo": [
-    "A través del programa Erasmus+, tuve la oportunidad de cursar un semestre completo en INSA Rouen Normandie, en Francia. Durante ese tiempo pude adaptarme a una dinámica académica internacional de alto nivel, conectar con personas de diversas culturas y nacionalidades, y explorar la riqueza cultural y cotidiana de Europa."
+   "parrafos": [
+    "Mi experiencia de movilidad fue profundamente transformadora, tanto a nivel personal como académico. A través del programa Erasmus+, tuve la oportunidad de cursar un semestre completo en INSA Rouen Normandie, en Francia. Durante ese tiempo pude adaptarme a una dinámica académica internacional de alto nivel, conectar con personas de diversas culturas y nacionalidades, y explorar la riqueza cultural y cotidiana de Europa."
    ],
    "consejo": "A quienes estén considerando postularse o sientan temor, les aconsejo informarse a fondo sobre el destino antes de viajar y, si viajan en grupo, construir una red de apoyo sólida desde el inicio. Al llegar, busquen integrarse activamente en la comunidad estudiantil y local; salir de la zona de confort da miedo al principio, pero no dejen que la incertidumbre les impida vivir una experiencia que amplía por completo la visión del mundo y del futuro profesional.",
    "foto": "img/testimonios/paola-rodriguez-brea.jpg",
@@ -386,7 +386,7 @@ window.COMUNIDAD={
    "permiso": true,
    "foto_vertical": true,
    "foto_posicion": "50% 90%",
-  "foto_alt": "Paola Rodríguez Brea en una calle de París, con la torre Eiffel al fondo",
+   "foto_alt": "Paola Rodríguez Brea en una calle de París, con la torre Eiffel al fondo",
    "permiso_nota": "Autorización de la estudiante confirmada por la coordinación, 2026-11-08"
   },
   {
