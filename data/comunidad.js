@@ -49,6 +49,22 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
+   "nombre": "José Carlos Cámara",
+   "institucion": "universidad_complutense_madrid",
+   "cargo": {},
+   "correo": "",
+   "fuente": "",
+   "confirmado": false
+  },
+  {
+   "nombre": "María del Carmen Salgado Santamaría",
+   "institucion": "universidad_complutense_madrid",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
+   "confirmado": false
+  },
+  {
    "nombre": "Lola Prieto",
    "institucion": "universidad_complutense_madrid",
    "cargo": {
@@ -60,14 +76,6 @@ window.COMUNIDAD={
   },
   {
    "nombre": "María Teresa García Fernández",
-   "institucion": "universidad_complutense_madrid",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
-   "nombre": "José Carlos Cámara",
    "institucion": "universidad_complutense_madrid",
    "cargo": {},
    "correo": "",
@@ -107,23 +115,11 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Cristina Palacios",
+   "nombre": "Genoveva Malo Toral",
    "institucion": "universidad_del_azuay",
-   "cargo": {
-    "es": "Departamento de Relaciones Internacionales"
-   },
+   "cargo": {},
    "correo": "",
-   "fuente": "encuentro_guatemala_uazuay",
-   "confirmado": false
-  },
-  {
-   "nombre": "Aleksandra Zaporozhchenko",
-   "institucion": "universidad_del_azuay",
-   "cargo": {
-    "es": "Departamento de Relaciones Internacionales"
-   },
-   "correo": "",
-   "fuente": "encuentro_guatemala_uazuay",
+   "fuente": "",
    "confirmado": false
   },
   {
@@ -137,8 +133,8 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Genoveva Malo Toral",
-   "institucion": "universidad_del_azuay",
+   "nombre": "Javier Francisco Toral Iñiguez",
+   "institucion": "universidad_politecnica_salesiana",
    "cargo": {},
    "correo": "",
    "fuente": "",
@@ -153,8 +149,32 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Javier Francisco Toral Iñiguez",
+   "nombre": "Ángel Luis Torres Toukoumidis",
    "institucion": "universidad_politecnica_salesiana",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
+   "confirmado": false
+  },
+  {
+   "nombre": "Elizabeth Céspedes Ochoa",
+   "institucion": "universidad_ciencias_artes_chiapas",
+   "cargo": {},
+   "correo": "",
+   "fuente": "",
+   "confirmado": false
+  },
+  {
+   "nombre": "Alberto Nahun Zuart Garduño",
+   "institucion": "universidad_ciencias_artes_chiapas",
+   "cargo": {},
+   "correo": "",
+   "fuente": "",
+   "confirmado": false
+  },
+  {
+   "nombre": "Hugo Rojas",
+   "institucion": "universidad_ciencias_artes_chiapas",
    "cargo": {},
    "correo": "",
    "fuente": "",
@@ -171,39 +191,7 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Alberto Nahun Zuart Garduño",
-   "institucion": "universidad_ciencias_artes_chiapas",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
-   "nombre": "Rafael de Jesús Araujo González",
-   "institucion": "universidad_ciencias_artes_chiapas",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
-   "nombre": "Elizabeth Céspedes Ochoa",
-   "institucion": "universidad_ciencias_artes_chiapas",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
    "nombre": "Amira López Habib",
-   "institucion": "universidad_ciencias_artes_chiapas",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
-   "nombre": "Hugo Rojas",
    "institucion": "universidad_ciencias_artes_chiapas",
    "cargo": {},
    "correo": "",
@@ -251,6 +239,14 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
+   "nombre": "Estefanía Arriola Ordóñez",
+   "institucion": "universidad_valle_guatemala",
+   "cargo": {},
+   "correo": "",
+   "fuente": "",
+   "confirmado": false
+  },
+  {
    "nombre": "Fernando Antonio Escalante Arévalo",
    "institucion": "universidad_valle_guatemala",
    "cargo": {},
@@ -267,8 +263,8 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Estefanía Arriola Ordóñez",
-   "institucion": "universidad_valle_guatemala",
+   "nombre": "Arelis Subero",
+   "institucion": "universidad_autonoma_santo_domingo",
    "cargo": {},
    "correo": "",
    "fuente": "",
@@ -288,14 +284,6 @@ window.COMUNIDAD={
    "confirmado": true
   },
   {
-   "nombre": "Arelis Subero",
-   "institucion": "universidad_autonoma_santo_domingo",
-   "cargo": {},
-   "correo": "",
-   "fuente": "",
-   "confirmado": false
-  },
-  {
    "nombre": "Emilio Mínguez Torres",
    "institucion": "universidad_caribe_unicaribe",
    "cargo": {
@@ -306,11 +294,11 @@ window.COMUNIDAD={
    "confirmado": false
   },
   {
-   "nombre": "Nidia Mirely Martínez Ciprián",
+   "nombre": "Ricardo Ramírez",
    "institucion": "universidad_caribe_unicaribe",
    "cargo": {},
    "correo": "",
-   "fuente": "",
+   "fuente": "coordinacion-2026-11-08",
    "confirmado": false
   },
   {
@@ -319,6 +307,22 @@ window.COMUNIDAD={
    "cargo": {},
    "correo": "",
    "fuente": "",
+   "confirmado": false
+  },
+  {
+   "nombre": "Elisa Elena González",
+   "institucion": "universidad_caribe_unicaribe",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
+   "confirmado": false
+  },
+  {
+   "nombre": "Arianna Frencia",
+   "institucion": "universidad_caribe_unicaribe",
+   "cargo": {},
+   "correo": "",
+   "fuente": "coordinacion-2026-11-08",
    "confirmado": false
   }
  ],
