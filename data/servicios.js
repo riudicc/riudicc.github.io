@@ -80,8 +80,8 @@ window.SERVICIOS={
     },
     {
      "t": {
-      "es": "Producción científica",
-      "en": "Research output"
+      "es": "Publicaciones",
+      "en": "Publications"
      },
      "href": "#produccion"
     }
