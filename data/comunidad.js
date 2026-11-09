@@ -562,6 +562,10 @@ window.COMUNIDAD={
      {
       "nombre": "Universidad Politécnica Salesiana (UPS)",
       "inst": "Javier Francisco Toral Iñiguez"
+     },
+     {
+      "nombre": "Universidad Politécnica de Chiapas (UPChiapas)",
+      "inst": "Claudia Araceli Madariaga Aguilar"
      }
     ]
    },
