@@ -601,7 +601,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italia",
     "obc_c_do": "República Dominicana",
-    "obc_c_mx": "México"
+    "obc_c_mx": "México",
+    "obc_sec": "Secretaria Técnica",
+    "obc_sec_f": "Gestión técnica de la plataforma y del tablón de movilidad."
   },
   "en": {
     "lang_name": "English",
@@ -1200,7 +1202,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italy",
     "obc_c_do": "Dominican Republic",
-    "obc_c_mx": "Mexico"
+    "obc_c_mx": "Mexico",
+    "obc_sec": "Technical Secretary",
+    "obc_sec_f": "Technical management of the platform and the mobility board."
   },
   "it": {
     "lang_name": "Italiano",
@@ -1799,7 +1803,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italia",
     "obc_c_do": "Repubblica Dominicana",
-    "obc_c_mx": "Messico"
+    "obc_c_mx": "Messico",
+    "obc_sec": "Segretaria tecnica",
+    "obc_sec_f": "Gestione tecnica della piattaforma e della bacheca della mobilità."
   },
   "fr": {
     "lang_name": "Français",
@@ -2398,6 +2404,8 @@ window.INTERFAZ={
     "obc_c_ec": "Équateur",
     "obc_c_it": "Italie",
     "obc_c_do": "République dominicaine",
-    "obc_c_mx": "Mexique"
+    "obc_c_mx": "Mexique",
+    "obc_sec": "Secrétaire technique",
+    "obc_sec_f": "Gestion technique de la plateforme et du tableau de la mobilité."
   }
 };
