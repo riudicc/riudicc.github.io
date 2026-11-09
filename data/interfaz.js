@@ -154,7 +154,7 @@ window.INTERFAZ={
     "p_out_source": "Fuente",
     "p_out_to": "Enviar a",
     "footer_disclaimer": "Cofinanciado por la Unión Europea. No obstante, los puntos de vista y opiniones expresados son exclusivamente los del autor o autores y no reflejan necesariamente los de la Unión Europea o los de la autoridad que concede la subvención. Ni la Unión Europea ni la autoridad que concede la subvención pueden ser consideradas responsables de ellos.",
-    "footer_text": "Espacio comunitario de la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural, mantenido por las universidades socias. Sitio oficial: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contacto de la red: {mail} · Contenidos bajo licencia <a href=\"https://creativecommons.org/licenses/by/4.0/deed.es\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo indicación.",
+    "footer_text": "Espacio comunitario de la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural, mantenido por las universidades socias. Sitio oficial: <a href=\"https://riudicc.org/\">riudicc.org</a> · <a href=\"https://erasmus-plus.ec.europa.eu/projects/search/details/101178033\" target=\"_blank\" rel=\"noopener\">Ficha oficial en Erasmus+</a> · Contacto de la red: {mail} · Contenidos bajo licencia <a href=\"https://creativecommons.org/licenses/by/4.0/deed.es\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo indicación.",
     "machine_note": "",
     "fallback_note": "Esta noticia todavía no está traducida al español; se muestra en {lang}.",
     "eu_line": "Cofinanciado por la Unión Europea",
@@ -584,7 +584,14 @@ window.INTERFAZ={
     "su_kicker": "Sobre este espacio",
     "su_title": "Sostenibilidad y mantenimiento",
     "su_intro": "Cómo se mantiene este espacio comunitario, quién lo cuida y cómo seguirá disponible cuando termine la financiación del proyecto.",
-    "pr_lic": "Texto publicado con permiso de sus autores. Derechos reservados a los autores, salvo que se indique otra licencia."
+    "pr_lic": "Texto publicado con permiso de sus autores. Derechos reservados a los autores, salvo que se indique otra licencia.",
+    "fc_title": "Ficha oficial del proyecto",
+    "fc_ref": "Referencia",
+    "fc_prog": "Programa",
+    "fc_prog_v": "Erasmus+ · Desarrollo de capacidades en educación superior",
+    "fc_dates": "Duración",
+    "fc_coord": "Coordina",
+    "fc_link": "Ver la ficha en la Plataforma de Resultados de Erasmus+"
   },
   "en": {
     "lang_name": "English",
@@ -736,7 +743,7 @@ window.INTERFAZ={
     "p_out_source": "Source",
     "p_out_to": "Send to",
     "footer_disclaimer": "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible for them.",
-    "footer_text": "Community space of the International Network of Universities for Inclusive Development and Scientific and Cultural Exchange, run by the partner universities. Official website: <a href=\"https://riudicc.org/\">riudicc.org</a> · Network contact: {mail} · Content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a> unless stated otherwise.",
+    "footer_text": "Community space of the International Network of Universities for Inclusive Development and Scientific and Cultural Exchange, run by the partner universities. Official website: <a href=\"https://riudicc.org/\">riudicc.org</a> · <a href=\"https://erasmus-plus.ec.europa.eu/projects/search/details/101178033\" target=\"_blank\" rel=\"noopener\">Official Erasmus+ record</a> · Network contact: {mail} · Content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a> unless stated otherwise.",
     "machine_note": "",
     "fallback_note": "This story has not been translated into English yet; it is shown in {lang}.",
     "eu_line": "Co-funded by the European Union",
@@ -1166,7 +1173,14 @@ window.INTERFAZ={
     "su_kicker": "About this space",
     "su_title": "Sustainability and maintenance",
     "su_intro": "How this community space is maintained, who looks after it and how it will remain available when the project funding ends.",
-    "pr_lic": "Text published with the authors' permission. All rights reserved by the authors unless another licence is stated."
+    "pr_lic": "Text published with the authors' permission. All rights reserved by the authors unless another licence is stated.",
+    "fc_title": "Official project record",
+    "fc_ref": "Reference",
+    "fc_prog": "Programme",
+    "fc_prog_v": "Erasmus+ · Capacity Building in Higher Education",
+    "fc_dates": "Duration",
+    "fc_coord": "Coordinator",
+    "fc_link": "View the record on the Erasmus+ Project Results Platform"
   },
   "it": {
     "lang_name": "Italiano",
@@ -1318,7 +1332,7 @@ window.INTERFAZ={
     "p_out_source": "Fonte",
     "p_out_to": "Inviare a",
     "footer_disclaimer": "Cofinanziato dall'Unione europea. Le opinioni espresse appartengono tuttavia al solo o ai soli autori e non riflettono necessariamente le opinioni dell'Unione europea o dell'autorità concedente. Né l'Unione europea né l'autorità concedente possono esserne ritenute responsabili.",
-    "footer_text": "Spazio comunitario della Rete internazionale di università per lo sviluppo inclusivo e lo scambio scientifico e culturale, curato dalle università partner. Sito ufficiale: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contatto della rete: {mail} · Contenuti con licenza <a href=\"https://creativecommons.org/licenses/by/4.0/deed.it\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo diversa indicazione.",
+    "footer_text": "Spazio comunitario della Rete internazionale di università per lo sviluppo inclusivo e lo scambio scientifico e culturale, curato dalle università partner. Sito ufficiale: <a href=\"https://riudicc.org/\">riudicc.org</a> · <a href=\"https://erasmus-plus.ec.europa.eu/projects/search/details/101178033\" target=\"_blank\" rel=\"noopener\">Scheda ufficiale Erasmus+</a> · Contatto della rete: {mail} · Contenuti con licenza <a href=\"https://creativecommons.org/licenses/by/4.0/deed.it\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo diversa indicazione.",
     "machine_note": "Traduzione automatica, in attesa di revisione da parte di una persona madrelingua.",
     "fallback_note": "Questa notizia non è ancora tradotta in italiano; viene mostrata in {lang}.",
     "eu_line": "Cofinanziato dall'Unione europea",
@@ -1748,7 +1762,14 @@ window.INTERFAZ={
     "su_kicker": "Su questo spazio",
     "su_title": "Sostenibilità e manutenzione",
     "su_intro": "Come viene mantenuto questo spazio comunitario, chi se ne occupa e come resterà disponibile alla fine del finanziamento del progetto.",
-    "pr_lic": "Testo pubblicato con il permesso degli autori. Tutti i diritti riservati agli autori, salvo diversa licenza indicata."
+    "pr_lic": "Testo pubblicato con il permesso degli autori. Tutti i diritti riservati agli autori, salvo diversa licenza indicata.",
+    "fc_title": "Scheda ufficiale del progetto",
+    "fc_ref": "Riferimento",
+    "fc_prog": "Programma",
+    "fc_prog_v": "Erasmus+ · Sviluppo delle capacità nell'istruzione superiore",
+    "fc_dates": "Durata",
+    "fc_coord": "Coordinatore",
+    "fc_link": "Vedi la scheda sulla piattaforma dei risultati Erasmus+"
   },
   "fr": {
     "lang_name": "Français",
@@ -1900,7 +1921,7 @@ window.INTERFAZ={
     "p_out_source": "Source",
     "p_out_to": "Envoyer à",
     "footer_disclaimer": "Cofinancé par l'Union européenne. Les points de vue et avis exprimés n'engagent toutefois que leur(s) auteur(s) et ne reflètent pas nécessairement ceux de l'Union européenne ou de l'autorité octroyant la subvention. Ni l'Union européenne ni l'autorité octroyant la subvention ne sauraient en être tenues pour responsables.",
-    "footer_text": "Espace communautaire du Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel, animé par les universités partenaires. Site officiel : <a href=\"https://riudicc.org/\">riudicc.org</a> · Contact du réseau : {mail} · Contenus sous licence <a href=\"https://creativecommons.org/licenses/by/4.0/deed.fr\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, sauf indication contraire.",
+    "footer_text": "Espace communautaire du Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel, animé par les universités partenaires. Site officiel : <a href=\"https://riudicc.org/\">riudicc.org</a> · <a href=\"https://erasmus-plus.ec.europa.eu/projects/search/details/101178033\" target=\"_blank\" rel=\"noopener\">Fiche officielle Erasmus+</a> · Contact du réseau : {mail} · Contenus sous licence <a href=\"https://creativecommons.org/licenses/by/4.0/deed.fr\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, sauf indication contraire.",
     "machine_note": "Traduction automatique, en attente de relecture par une personne de langue maternelle française.",
     "fallback_note": "Cette actualité n'est pas encore traduite en français ; elle est affichée en {lang}.",
     "eu_line": "Cofinancé par l'Union européenne",
@@ -2330,6 +2351,13 @@ window.INTERFAZ={
     "su_kicker": "À propos de cet espace",
     "su_title": "Pérennité et maintenance",
     "su_intro": "Comment cet espace communautaire est entretenu, qui s'en occupe et comment il restera disponible à la fin du financement du projet.",
-    "pr_lic": "Texte publié avec l'autorisation des auteurs. Tous droits réservés aux auteurs, sauf autre licence indiquée."
+    "pr_lic": "Texte publié avec l'autorisation des auteurs. Tous droits réservés aux auteurs, sauf autre licence indiquée.",
+    "fc_title": "Fiche officielle du projet",
+    "fc_ref": "Référence",
+    "fc_prog": "Programme",
+    "fc_prog_v": "Erasmus+ · Renforcement des capacités dans l'enseignement supérieur",
+    "fc_dates": "Durée",
+    "fc_coord": "Coordination",
+    "fc_link": "Voir la fiche sur la plateforme des résultats Erasmus+"
   }
 };

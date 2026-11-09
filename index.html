@@ -205,6 +205,7 @@ section.view.active{display:block}
 .article .content{display:grid;gap:1em;font-size:1.06rem}
 .article .content p{max-width:68ch}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.ficha{margin:22px 0 8px;max-width:760px;background:var(--card);border:1px solid var(--line);border-left:4px solid #003399;border-radius:var(--radius);padding:18px 22px}.ficha h2{font-size:1.1rem;margin:0 0 10px}.ficha dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 20px;margin:0 0 14px}.ficha dt{font-size:.8rem;color:var(--muted)}.ficha dd{margin:2px 0 0;font-weight:600}.ficha p{margin:0}
 .su-body{max-width:760px}.su-sec{margin:0 0 26px}.su-sec h2{font-size:1.2rem;margin:0 0 8px}.su-sec p{margin:0 0 .7em}
 .pf-busca input{width:100%;font:inherit;font-size:1.05rem;padding:13px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
 .pf-busca input:focus{outline:2px solid #6cc4ee;outline-offset:1px}
@@ -1173,6 +1174,7 @@ footer .social svg{width:16px;height:16px}
         <h1 data-i18n="red_title"></h1>
       </div>
       <div class="prose" id="about"></div>
+      <aside class="ficha" id="ficha"></aside>
       <div class="sec" style="display:grid;gap:16px">
         <h2 data-i18n="partners"></h2>
         <div class="partners" id="partners"></div>
@@ -1675,17 +1677,17 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261108q"></script>
-<script src="data/contenido.js?v=20261108q"></script>
-<script src="data/ofertas.js?v=20261108q"></script>
-<script src="data/comunidad.js?v=20261108q"></script>
-<script src="data/observatorio.js?v=20261108q"></script>
-<script src="data/mundo.js?v=20261108q"></script>
-<script src="data/observatorios.js?v=20261108q"></script>
-<script src="data/servicios.js?v=20261108q"></script>
-<script src="data/impacto.js?v=20261108q"></script>
-<script src="data/asistente.js?v=20261108q"></script>
-<script src="data/sostenibilidad.js?v=20261108q"></script>
+<script src="data/interfaz.js?v=20261108r"></script>
+<script src="data/contenido.js?v=20261108r"></script>
+<script src="data/ofertas.js?v=20261108r"></script>
+<script src="data/comunidad.js?v=20261108r"></script>
+<script src="data/observatorio.js?v=20261108r"></script>
+<script src="data/mundo.js?v=20261108r"></script>
+<script src="data/observatorios.js?v=20261108r"></script>
+<script src="data/servicios.js?v=20261108r"></script>
+<script src="data/impacto.js?v=20261108r"></script>
+<script src="data/asistente.js?v=20261108r"></script>
+<script src="data/sostenibilidad.js?v=20261108r"></script>
 <script>
 (function(){
 "use strict";
@@ -2143,7 +2145,7 @@ var pintarGuia = function(){
 $("#guToc").addEventListener("click", function(e){ var a = e.target.closest("a[data-sec]"); if (!a) return; e.preventDefault(); var el = document.getElementById(a.getAttribute("data-sec")); if (el) el.scrollIntoView({behavior: "smooth", block: "start"}); });
 var pintarTodo = function(){
   pintarEstaticos(); pintarInicio(); pintarRed(); pintarNoticias(); pintarFiltrosConv(); pintarConvocatorias();
-  pintarObservatorio(); pintarComunidad(); pintarSostenibilidad(); pintarProduccion(); pintarBlog(); pintarContacto(); pintarPrivacidad(); pintarServicios(); pintarImpacto(); pintarAsistente(); pintarInclusion(); pintarGuia(); pintarCreditos();
+  pintarObservatorio(); pintarComunidad(); pintarFicha(); pintarSostenibilidad(); pintarProduccion(); pintarBlog(); pintarContacto(); pintarPrivacidad(); pintarServicios(); pintarImpacto(); pintarAsistente(); pintarInclusion(); pintarGuia(); pintarCreditos();
   aplicarTema(); pintarGlobo(); pintarMovilidad(); mostrar(true);
 };
 
@@ -2394,6 +2396,13 @@ var pintarCreditos = function(){
       (b.personas ? b.personas.map(function(p){ return '<p class="cr-p"><b>' + esc(p.nombre) + '</b>' + (p.inst ? '<span class="muted">' + esc(p.inst) + '</span>' : '') + '</p>'; }).join("") : '') +
       (b.texto ? [].concat(b.texto[lang] || b.texto.es).map(function(x){ return '<p class="muted">' + esc(x) + '</p>'; }).join("") : '') + '</section>';
   }).join("") + '<p class="small muted">' + esc(t("cr_version", {d: (function(){ try { return new Intl.DateTimeFormat(lang, {month: "long", year: "numeric"}).format(new Date(K.fecha + "-15")); } catch (e) { return K.fecha; } })()})) + '</p>';
+};
+var FICHA_URL = "https://erasmus-plus.ec.europa.eu/projects/search/details/101178033";
+var pintarFicha = function(){
+  var fila = function(k, v){ return '<div><dt>' + esc(t(k)) + '</dt><dd>' + v + '</dd></div>'; };
+  $("#ficha").innerHTML = '<h2>' + esc(t("fc_title")) + '</h2><dl>' +
+    fila("fc_ref", "101178033") + fila("fc_prog", esc(t("fc_prog_v"))) + fila("fc_dates", esc(fecha("2025-01-01")) + " – " + esc(fecha("2026-12-31"))) + fila("fc_coord", "Universidad Complutense de Madrid") +
+    '</dl><p><a class="btn ghost" href="' + FICHA_URL + '" target="_blank" rel="noopener">' + esc(t("fc_link")) + ' ↗</a></p>';
 };
 var pintarSostenibilidad = function(){
   var S = window.SOSTENIBILIDAD || {secciones: []}, otro = null;

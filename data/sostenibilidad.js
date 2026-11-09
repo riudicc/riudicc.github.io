@@ -95,12 +95,12 @@ window.SOSTENIBILIDAD = {
       "parrafos": {
         "es": [
           "Los contenidos se publican con licencia abierta CC BY 4.0, salvo que se indique otra cosa, y el código con licencia MIT, para que otras redes e instituciones puedan reutilizarlos.",
-          "Los resultados del proyecto se depositarán también en la plataforma oficial de resultados de Erasmus+ y, cuando corresponda, en repositorios abiertos que asignan identificadores permanentes (DOI) a las publicaciones.",
+          "Los resultados del proyecto se depositarán también en su ficha oficial de la plataforma de resultados de Erasmus+ (referencia 101178033) y, cuando corresponda, en repositorios abiertos que asignan identificadores permanentes (DOI) a las publicaciones.",
           "Así, aunque cambien las personas o termine la financiación, la red conserva su espacio común y su memoria."
         ],
         "en": [
           "Content is published under an open CC BY 4.0 licence unless stated otherwise, and the code under an MIT licence, so that other networks and institutions can reuse them.",
-          "The project's results will also be deposited on the official Erasmus+ results platform and, where appropriate, in open repositories that assign permanent identifiers (DOIs) to publications.",
+          "The project's results will also be deposited in its official record on the Erasmus+ results platform (reference 101178033) and, where appropriate, in open repositories that assign permanent identifiers (DOIs) to publications.",
           "That way, even if people change or funding ends, the network keeps its common space and its memory."
         ]
       }
