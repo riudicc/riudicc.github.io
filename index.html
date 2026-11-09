@@ -206,7 +206,7 @@ section.view.active{display:block}
 .article .content p{max-width:68ch}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .ficha{margin:22px 0 8px;max-width:760px;background:var(--card);border:1px solid var(--line);border-left:4px solid #003399;border-radius:var(--radius);padding:18px 22px}.ficha h2{font-size:1.1rem;margin:0 0 10px}.ficha dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px 20px;margin:0 0 14px}.ficha dt{font-size:.8rem;color:var(--muted)}.ficha dd{margin:2px 0 0;font-weight:600}.ficha p{margin:0}
-.obs-coord{margin:0 0 30px}.obs-coord h2{font-size:1.35rem;margin:0 0 4px}.obs-coord>p{margin:0 0 14px}.obc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.obc{grid-column:span 2}.obc-dir,.obc-sec{grid-column:span 3}@media (max-width:860px){.obc-grid{grid-template-columns:1fr}.obc,.obc-dir,.obc-sec{grid-column:auto}}.obc{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}.obc-dir{border-left:4px solid #6fafab}.obc-sec{border-left:4px solid #6cc4ee}.obc-f{font-style:italic;color:var(--muted)}.obc img{width:84px;height:48px;object-fit:contain;flex:none;background:#fff;border-radius:8px;padding:4px}.obc .kicker{margin:0}.obc p{margin:2px 0 0}.obc-n{font-weight:600;font-size:1.02rem}@media (min-width:641px){.obc{flex-direction:column;align-items:flex-start;gap:10px}.obc img{width:auto;max-width:140px;height:44px;padding:0;background:none}}
+.obs-coord{margin:0 0 30px}.obs-coord h2{font-size:1.35rem;margin:0 0 4px}.obs-coord>p{margin:0 0 14px}.obc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.obc{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}.obc-dir{border-left:4px solid #6fafab}.obc img{width:84px;height:48px;object-fit:contain;flex:none;background:#fff;border-radius:8px;padding:4px}.obc .kicker{margin:0}.obc p{margin:2px 0 0}.obc-n{font-weight:600;font-size:1.02rem}@media (min-width:641px){.obc{flex-direction:column;align-items:flex-start;gap:10px}.obc img{width:auto;max-width:140px;height:44px;padding:0;background:none}}
 .su-body{max-width:760px}.su-sec{margin:0 0 26px}.su-sec h2{font-size:1.2rem;margin:0 0 8px}.su-sec p{margin:0 0 .7em}
 .pf-busca input{width:100%;font:inherit;font-size:1.05rem;padding:13px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
 .pf-busca input:focus{outline:2px solid #6cc4ee;outline-offset:1px}
@@ -1285,7 +1285,6 @@ footer .social svg{width:16px;height:16px}
         <p class="muted" data-i18n="obc_intro"></p>
         <div class="obc-grid">
           <article class="obc obc-dir"><img src="img/logos/03_ec_uda.png" alt=""><div><div class="kicker" data-i18n="obc_dir"></div><p class="obc-n">Marcelo Calle Calle</p><p class="small muted"><span>Universidad del Azuay</span> · <span data-i18n="obc_c_ec"></span></p></div></article>
-          <article class="obc obc-sec"><img src="img/logos/09_do_uasd.png" alt=""><div><div class="kicker" data-i18n="obc_sec"></div><p class="obc-n">Suany Elizabeth Rosario Díaz</p><p class="small muted"><span>Universidad Autónoma de Santo Domingo (UASD)</span> · <span data-i18n="obc_c_do"></span></p><p class="small obc-f" data-i18n="obc_sec_f"></p></div></article>
           <article class="obc"><img src="img/logos/02_it_unime.png" alt=""><div><div class="kicker" data-i18n="obc_eu"></div><p class="obc-n">Sebastiano Nucera</p><p class="small muted"><span>Università degli Studi di Messina</span> · <span data-i18n="obc_c_it"></span></p></div></article>
           <article class="obc"><img src="img/logos/10_do_unicaribe.png" alt=""><div><div class="kicker" data-i18n="obc_car"></div><p class="obc-n">Bethy Linoska Díaz</p><p class="small muted"><span>Universidad del Caribe (UNICARIBE)</span> · <span data-i18n="obc_c_do"></span></p></div></article>
           <article class="obc"><img src="img/logos/06_mx_upchiapas.png" alt=""><div><div class="kicker" data-i18n="obc_la"></div><p class="obc-n">Claudia Araceli Madariaga Aguilar</p><p class="small muted"><span>Universidad Politécnica de Chiapas</span> · <span data-i18n="obc_c_mx"></span></p></div></article>
@@ -1694,17 +1693,17 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261109d"></script>
-<script src="data/contenido.js?v=20261109d"></script>
-<script src="data/ofertas.js?v=20261109d"></script>
-<script src="data/comunidad.js?v=20261109d"></script>
-<script src="data/observatorio.js?v=20261109d"></script>
-<script src="data/mundo.js?v=20261109d"></script>
-<script src="data/observatorios.js?v=20261109d"></script>
-<script src="data/servicios.js?v=20261109d"></script>
-<script src="data/impacto.js?v=20261109d"></script>
-<script src="data/asistente.js?v=20261109d"></script>
-<script src="data/sostenibilidad.js?v=20261109d"></script>
+<script src="data/interfaz.js?v=20261109c"></script>
+<script src="data/contenido.js?v=20261109c"></script>
+<script src="data/ofertas.js?v=20261109c"></script>
+<script src="data/comunidad.js?v=20261109c"></script>
+<script src="data/observatorio.js?v=20261109c"></script>
+<script src="data/mundo.js?v=20261109c"></script>
+<script src="data/observatorios.js?v=20261109c"></script>
+<script src="data/servicios.js?v=20261109c"></script>
+<script src="data/impacto.js?v=20261109c"></script>
+<script src="data/asistente.js?v=20261109c"></script>
+<script src="data/sostenibilidad.js?v=20261109c"></script>
 <script>
 (function(){
 "use strict";
