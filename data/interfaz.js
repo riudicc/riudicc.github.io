@@ -592,9 +592,16 @@ window.INTERFAZ={
     "fc_dates": "Duración",
     "fc_coord": "Coordina",
     "fc_link": "Ver la ficha en la Plataforma de Resultados de Erasmus+",
-    "obs_lead_kicker": "Dirige el observatorio",
-    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
-    "obs_lead_p": "Lidera el paquete de trabajo 7, «Construcción de medidas sostenibles para el futuro de la alianza». Cada universidad socia gestiona su propio micro-observatorio."
+    "obc_title": "Quién coordina el observatorio",
+    "obc_intro": "Un equipo con representación de cada región de la red.",
+    "obc_dir": "Director del Observatorio",
+    "obc_eu": "Vocal por Europa",
+    "obc_car": "Vocal por el Caribe",
+    "obc_la": "Vocal por América Latina",
+    "obc_c_ec": "Ecuador",
+    "obc_c_it": "Italia",
+    "obc_c_do": "República Dominicana",
+    "obc_c_mx": "México"
   },
   "en": {
     "lang_name": "English",
@@ -1184,9 +1191,16 @@ window.INTERFAZ={
     "fc_dates": "Duration",
     "fc_coord": "Coordinator",
     "fc_link": "View the record on the Erasmus+ Project Results Platform",
-    "obs_lead_kicker": "Observatory led by",
-    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
-    "obs_lead_p": "Leader of work package 7, “Building sustainable measures for the future of the alliance”. Each partner university runs its own micro-observatory."
+    "obc_title": "Who coordinates the observatory",
+    "obc_intro": "A team with representatives from each region of the network.",
+    "obc_dir": "Director of the Observatory",
+    "obc_eu": "Member for Europe",
+    "obc_car": "Member for the Caribbean",
+    "obc_la": "Member for Latin America",
+    "obc_c_ec": "Ecuador",
+    "obc_c_it": "Italy",
+    "obc_c_do": "Dominican Republic",
+    "obc_c_mx": "Mexico"
   },
   "it": {
     "lang_name": "Italiano",
@@ -1776,9 +1790,16 @@ window.INTERFAZ={
     "fc_dates": "Durata",
     "fc_coord": "Coordinatore",
     "fc_link": "Vedi la scheda sulla piattaforma dei risultati Erasmus+",
-    "obs_lead_kicker": "Osservatorio coordinato da",
-    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
-    "obs_lead_p": "Coordina il pacchetto di lavoro 7, «Costruzione di misure sostenibili per il futuro dell'alleanza». Ogni università partner gestisce il proprio micro-osservatorio."
+    "obc_title": "Chi coordina l'osservatorio",
+    "obc_intro": "Un gruppo con rappresentanti di ogni regione della rete.",
+    "obc_dir": "Direttore dell'Osservatorio",
+    "obc_eu": "Membro per l'Europa",
+    "obc_car": "Membro per i Caraibi",
+    "obc_la": "Membro per l'America Latina",
+    "obc_c_ec": "Ecuador",
+    "obc_c_it": "Italia",
+    "obc_c_do": "Repubblica Dominicana",
+    "obc_c_mx": "Messico"
   },
   "fr": {
     "lang_name": "Français",
@@ -2368,8 +2389,15 @@ window.INTERFAZ={
     "fc_dates": "Durée",
     "fc_coord": "Coordination",
     "fc_link": "Voir la fiche sur la plateforme des résultats Erasmus+",
-    "obs_lead_kicker": "Observatoire coordonné par",
-    "obs_lead_name": "Universidad del Azuay (UDA), Équateur",
-    "obs_lead_p": "Responsable du lot de travail 7, « Construire des mesures durables pour l'avenir de l'alliance ». Chaque université partenaire gère son propre micro-observatoire."
+    "obc_title": "Qui coordonne l'observatoire",
+    "obc_intro": "Une équipe avec des représentants de chaque région du réseau.",
+    "obc_dir": "Directeur de l'Observatoire",
+    "obc_eu": "Membre pour l'Europe",
+    "obc_car": "Membre pour les Caraïbes",
+    "obc_la": "Membre pour l'Amérique latine",
+    "obc_c_ec": "Équateur",
+    "obc_c_it": "Italie",
+    "obc_c_do": "République dominicaine",
+    "obc_c_mx": "Mexique"
   }
 };
