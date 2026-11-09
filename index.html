@@ -1313,11 +1313,6 @@ footer .social svg{width:16px;height:16px}
           <p class="small muted" data-i18n="gl_source"></p>
         </div>
       </div>
-      <section class="sec mx" id="obsTeam" aria-labelledby="obsTeamH">
-        <h2 id="obsTeamH" data-i18n="obs_team_h"></h2>
-        <p class="muted prose" data-i18n="obs_team_p"></p>
-        <div class="comite" id="obsComite"></div>
-      </section>
       <section class="sec mx" id="mxSec" aria-labelledby="mxH">
         <h2 id="mxH" data-i18n="mx_h"></h2>
         <p class="muted prose" data-i18n="mx_intro"></p>
@@ -1693,17 +1688,17 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261109c"></script>
-<script src="data/contenido.js?v=20261109c"></script>
-<script src="data/ofertas.js?v=20261109c"></script>
-<script src="data/comunidad.js?v=20261109c"></script>
-<script src="data/observatorio.js?v=20261109c"></script>
-<script src="data/mundo.js?v=20261109c"></script>
-<script src="data/observatorios.js?v=20261109c"></script>
-<script src="data/servicios.js?v=20261109c"></script>
-<script src="data/impacto.js?v=20261109c"></script>
-<script src="data/asistente.js?v=20261109c"></script>
-<script src="data/sostenibilidad.js?v=20261109c"></script>
+<script src="data/interfaz.js?v=20261109e"></script>
+<script src="data/contenido.js?v=20261109e"></script>
+<script src="data/ofertas.js?v=20261109e"></script>
+<script src="data/comunidad.js?v=20261109e"></script>
+<script src="data/observatorio.js?v=20261109e"></script>
+<script src="data/mundo.js?v=20261109e"></script>
+<script src="data/observatorios.js?v=20261109e"></script>
+<script src="data/servicios.js?v=20261109e"></script>
+<script src="data/impacto.js?v=20261109e"></script>
+<script src="data/asistente.js?v=20261109e"></script>
+<script src="data/sostenibilidad.js?v=20261109e"></script>
 <script>
 (function(){
 "use strict";
@@ -2379,8 +2374,8 @@ var pintarContacto = function(){
   var deRed = actuales.filter(function(p){ return p.institucion === "red"; });
   $("#ctRed").innerHTML = deRed.map(personaHTML).join("");
   $("#ctCoord").hidden = !deRed.length;
-  $("#ctComite").innerHTML = $("#obsComite").innerHTML = comiteHTML();
-  $("#ctObs").hidden = $("#obsTeam").hidden = !(C.observatorio_equipo || []).length;
+  $("#ctComite").innerHTML = comiteHTML();
+  $("#ctObs").hidden = !(C.observatorio_equipo || []).length;
   $("#ctPioneras").innerHTML = pioneras.map(personaHTML).join("");
   $("#ctCredit").hidden = !pioneras.length;
   $("#ctUnis").innerHTML = instituciones.map(function(i){
