@@ -154,7 +154,7 @@ window.INTERFAZ={
     "p_out_source": "Fuente",
     "p_out_to": "Enviar a",
     "footer_disclaimer": "Cofinanciado por la Unión Europea. No obstante, los puntos de vista y opiniones expresados son exclusivamente los del autor o autores y no reflejan necesariamente los de la Unión Europea o los de la autoridad que concede la subvención. Ni la Unión Europea ni la autoridad que concede la subvención pueden ser consideradas responsables de ellos.",
-    "footer_text": "Espacio comunitario de la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural, mantenido por las universidades socias. Sitio oficial: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contacto de la red: {mail}",
+    "footer_text": "Espacio comunitario de la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural, mantenido por las universidades socias. Sitio oficial: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contacto de la red: {mail} · Contenidos bajo licencia <a href=\"https://creativecommons.org/licenses/by/4.0/deed.es\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo indicación.",
     "machine_note": "",
     "fallback_note": "Esta noticia todavía no está traducida al español; se muestra en {lang}.",
     "eu_line": "Cofinanciado por la Unión Europea",
@@ -211,7 +211,7 @@ window.INTERFAZ={
     "pv_title": "Privacidad",
     "pv_draft": "Borrador pendiente de revisión por la coordinación de la red.",
     "pv_body": [
-      "Este sitio no usa cookies ni herramientas de seguimiento. No registra visitas ni datos de navegación.",
+      "Este sitio no usa cookies. Para saber cuántas personas lo visitan usa GoatCounter, un contador de visitas sin cookies que no guarda direcciones IP ni datos personales y no sigue a nadie entre sitios: solo registra cifras agregadas, como las páginas vistas, el país aproximado, el tipo de navegador y la página desde la que se llega.",
       "Tu navegador guarda solo dos preferencias en tu propio equipo: el idioma y la apariencia. No se envían a ningún lado y puedes borrarlas limpiando los datos del sitio en tu navegador.",
       "Las tipografías se cargan desde Google Fonts, que recibe la dirección IP de quien visita la página. Más adelante se alojarán en el propio sitio para evitarlo.",
       "Los formularios de contacto y de testimonios no envían nada por sí mismos: preparan un mensaje que tú mandas desde tu propio correo, si quieres. La foto de un testimonio se queda en tu equipo hasta que la adjuntas. Lo que envíes lo recibe la coordinación de la red, que lo usa solo para responderte, revisar y publicar tu propuesta.",
@@ -446,8 +446,8 @@ window.INTERFAZ={
     "tm_title": "Términos de uso",
     "tm_body": [
       "Este es el espacio comunitario de RIUDICC, la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural. Lo mantienen las universidades socias y complementa al sitio oficial, riudicc.org. Al usarlo aceptas estos términos.",
-      "Contenido abierto. Los resultados del proyecto que se publican aquí (textos, guías, informes y datos del observatorio) se comparten de forma gratuita y abierta, como pide el programa Erasmus+. Puedes reutilizarlos citando a RIUDICC como fuente. Los logotipos, las fotografías y las marcas pertenecen a sus titulares y no se pueden usar sin su permiso.",
-      "Convocatorias y datos. El tablón resume convocatorias de otras instituciones. Las fechas y los requisitos pueden cambiar: antes de postular, confírmalos siempre en el enlace oficial. Los datos del observatorio son agregados y provisionales, y se irán completando con el tiempo.",
+      "Contenido abierto. Salvo que se indique otra cosa, los contenidos de este sitio (textos, guías, informes y datos del observatorio) se publican bajo licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0), como pide el programa Erasmus+: puedes copiarlos, adaptarlos y compartirlos citando a RIUDICC como fuente. Las publicaciones, los testimonios y los artículos del blog pertenecen a sus autores y se reproducen con su permiso; para reutilizarlos, consulta la licencia indicada en cada uno o pide permiso a sus autores. Los logotipos, las fotografías y las marcas pertenecen a sus titulares. El código del sitio es abierto (licencia MIT) y está publicado en GitHub.",
+      "Convocatorias y datos. El tablón resume convocatorias de otras instituciones. Un agente de inteligencia artificial ayuda a localizarlas y resumirlas, y una persona del equipo revisa cada una antes de publicarla. Aun así, las fechas y los requisitos pueden cambiar: antes de postular, confírmalos siempre en el enlace oficial. Los datos del observatorio son agregados y provisionales, y se irán completando con el tiempo. Cómo se mantiene el sitio se explica en la página de Sostenibilidad.",
       "Lo que envías. Al enviar un testimonio, una foto o una propuesta confirmas que es tuyo y que cuentas con el permiso de las personas que aparecen en él. Nos autorizas a publicarlo en este sitio. La coordinación puede revisarlo, acortarlo o no publicarlo, y puedes pedir que se corrija o se retire en cualquier momento.",
       "Servicios. La sección Servicios describe una propuesta de acompañamiento de la red. Los materiales del proyecto seguirán siendo gratuitos. Cualquier acompañamiento a medida se acordará por escrito con la universidad socia o la entidad que lo preste, en sus propias condiciones.",
       "Enlaces externos. Los enlaces a otros sitios (universidades, convocatorias, redes sociales) llevan a páginas que tienen sus propias condiciones y de las que no somos responsables.",
@@ -579,7 +579,12 @@ window.INTERFAZ={
     "pr_none_p": "Prueba con otras palabras o quita algún filtro.",
     "nav_serv_todos": "Todos los servicios",
     "qn_com_t": "Comunidad",
-    "qn_com_p": "Experiencias de estudiantes y docentes en movilidad."
+    "qn_com_p": "Experiencias de estudiantes y docentes en movilidad.",
+    "nav_sost": "Sostenibilidad",
+    "su_kicker": "Sobre este espacio",
+    "su_title": "Sostenibilidad y mantenimiento",
+    "su_intro": "Cómo se mantiene este espacio comunitario, quién lo cuida y cómo seguirá disponible cuando termine la financiación del proyecto.",
+    "pr_lic": "Texto publicado con permiso de sus autores. Derechos reservados a los autores, salvo que se indique otra licencia."
   },
   "en": {
     "lang_name": "English",
@@ -731,7 +736,7 @@ window.INTERFAZ={
     "p_out_source": "Source",
     "p_out_to": "Send to",
     "footer_disclaimer": "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible for them.",
-    "footer_text": "Community space of the International Network of Universities for Inclusive Development and Scientific and Cultural Exchange, run by the partner universities. Official website: <a href=\"https://riudicc.org/\">riudicc.org</a> · Network contact: {mail}",
+    "footer_text": "Community space of the International Network of Universities for Inclusive Development and Scientific and Cultural Exchange, run by the partner universities. Official website: <a href=\"https://riudicc.org/\">riudicc.org</a> · Network contact: {mail} · Content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a> unless stated otherwise.",
     "machine_note": "",
     "fallback_note": "This story has not been translated into English yet; it is shown in {lang}.",
     "eu_line": "Co-funded by the European Union",
@@ -788,7 +793,7 @@ window.INTERFAZ={
     "pv_title": "Privacy",
     "pv_draft": "Draft pending review by the network's coordination team.",
     "pv_body": [
-      "This site uses no cookies or tracking tools. It does not log visits or browsing data.",
+      "This site uses no cookies. To know how many people visit it, it uses GoatCounter, a cookie-free visit counter that stores no IP addresses or personal data and does not track anyone across sites: it only records aggregated figures such as page views, approximate country, browser type and referring page.",
       "Your browser stores only two preferences on your own device: language and appearance. They are not sent anywhere and you can delete them by clearing the site data in your browser.",
       "Fonts are loaded from Google Fonts, which receives the IP address of visitors. They will later be hosted on the site itself to avoid this.",
       "The contact and testimonial forms send nothing by themselves: they prepare a message that you send from your own email, if you wish. A testimonial photo stays on your device until you attach it. What you send is received by the network's coordination team, which uses it only to reply, review and publish your proposal.",
@@ -1023,8 +1028,8 @@ window.INTERFAZ={
     "tm_title": "Terms of use",
     "tm_body": [
       "This is RIUDICC's community space, the International Network of Universities for Inclusive Development and Scientific and Cultural Exchange. It is maintained by the partner universities and complements the official site, riudicc.org. By using it you accept these terms.",
-      "Open content. The project results published here (texts, guides, reports and observatory data) are shared free of charge and openly, as the Erasmus+ programme requires. You may reuse them, citing RIUDICC as the source. Logos, photographs and trademarks belong to their owners and may not be used without their permission.",
-      "Opportunities and data. The board summarises calls from other institutions. Dates and requirements may change: always confirm them at the official link before applying. Observatory data are aggregated and provisional, and will be completed over time.",
+      "Open content. Unless stated otherwise, the content of this site (texts, guides, reports and observatory data) is published under a Creative Commons Attribution 4.0 International licence (CC BY 4.0), as the Erasmus+ programme requires: you may copy, adapt and share it, citing RIUDICC as the source. Publications, testimonials and blog articles belong to their authors and are reproduced with their permission; to reuse them, check the licence shown on each or ask the authors. Logos, photographs and trademarks belong to their owners. The site's code is open (MIT licence) and published on GitHub.",
+      "Opportunities and data. The board summarises calls from other institutions. An artificial intelligence agent helps find and summarise them, and a member of the team reviews each one before it is published. Even so, dates and requirements may change: always confirm them at the official link before applying. Observatory data are aggregated and provisional, and will be completed over time. How the site is maintained is explained on the Sustainability page.",
       "What you send. By sending a testimonial, a photo or a proposal you confirm that it is yours and that you have the permission of anyone who appears in it. You authorise us to publish it on this site. The coordination team may review it, shorten it or not publish it, and you may ask for it to be corrected or removed at any time.",
       "Services. The Services section describes a proposal for support from the network. Project materials will remain free. Any tailored support will be agreed in writing with the partner university or organisation providing it, under its own terms.",
       "External links. Links to other sites (universities, calls, social media) lead to pages with their own terms, for which we are not responsible.",
@@ -1156,7 +1161,12 @@ window.INTERFAZ={
     "pr_none_p": "Try other words or remove a filter.",
     "nav_serv_todos": "All services",
     "qn_com_t": "Community",
-    "qn_com_p": "Experiences of students and staff on mobility."
+    "qn_com_p": "Experiences of students and staff on mobility.",
+    "nav_sost": "Sustainability",
+    "su_kicker": "About this space",
+    "su_title": "Sustainability and maintenance",
+    "su_intro": "How this community space is maintained, who looks after it and how it will remain available when the project funding ends.",
+    "pr_lic": "Text published with the authors' permission. All rights reserved by the authors unless another licence is stated."
   },
   "it": {
     "lang_name": "Italiano",
@@ -1308,7 +1318,7 @@ window.INTERFAZ={
     "p_out_source": "Fonte",
     "p_out_to": "Inviare a",
     "footer_disclaimer": "Cofinanziato dall'Unione europea. Le opinioni espresse appartengono tuttavia al solo o ai soli autori e non riflettono necessariamente le opinioni dell'Unione europea o dell'autorità concedente. Né l'Unione europea né l'autorità concedente possono esserne ritenute responsabili.",
-    "footer_text": "Spazio comunitario della Rete internazionale di università per lo sviluppo inclusivo e lo scambio scientifico e culturale, curato dalle università partner. Sito ufficiale: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contatto della rete: {mail}",
+    "footer_text": "Spazio comunitario della Rete internazionale di università per lo sviluppo inclusivo e lo scambio scientifico e culturale, curato dalle università partner. Sito ufficiale: <a href=\"https://riudicc.org/\">riudicc.org</a> · Contatto della rete: {mail} · Contenuti con licenza <a href=\"https://creativecommons.org/licenses/by/4.0/deed.it\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, salvo diversa indicazione.",
     "machine_note": "Traduzione automatica, in attesa di revisione da parte di una persona madrelingua.",
     "fallback_note": "Questa notizia non è ancora tradotta in italiano; viene mostrata in {lang}.",
     "eu_line": "Cofinanziato dall'Unione europea",
@@ -1365,7 +1375,7 @@ window.INTERFAZ={
     "pv_title": "Privacy",
     "pv_draft": "Bozza in attesa di revisione da parte del coordinamento della rete.",
     "pv_body": [
-      "Questo sito non usa cookie né strumenti di tracciamento. Non registra visite né dati di navigazione.",
+      "Questo sito non usa cookie. Per sapere quante persone lo visitano usa GoatCounter, un contatore di visite senza cookie che non conserva indirizzi IP né dati personali e non segue nessuno tra siti diversi: registra solo dati aggregati, come pagine viste, paese approssimativo, tipo di browser e pagina di provenienza.",
       "Il tuo browser salva solo due preferenze sul tuo dispositivo: lingua e aspetto. Non vengono inviate da nessuna parte e puoi cancellarle eliminando i dati del sito dal browser.",
       "I caratteri tipografici sono caricati da Google Fonts, che riceve l'indirizzo IP di chi visita la pagina. In seguito saranno ospitati sul sito stesso per evitarlo.",
       "I moduli di contatto e delle testimonianze non inviano nulla da soli: preparano un messaggio che invii dalla tua email, se lo desideri. La foto di una testimonianza resta sul tuo dispositivo finché non la alleghi. Ciò che invii lo riceve il coordinamento della rete, che lo usa solo per risponderti, rivedere e pubblicare la tua proposta.",
@@ -1600,8 +1610,8 @@ window.INTERFAZ={
     "tm_title": "Termini d'uso",
     "tm_body": [
       "Questo è lo spazio comunitario di RIUDICC, la Rete Internazionale di Università per lo Sviluppo Inclusivo e lo Scambio Scientifico e Culturale. È gestito dalle università partner e completa il sito ufficiale, riudicc.org. Usandolo accetti questi termini.",
-      "Contenuti aperti. I risultati del progetto pubblicati qui (testi, guide, rapporti e dati dell'osservatorio) sono condivisi gratuitamente e apertamente, come richiede il programma Erasmus+. Puoi riutilizzarli citando RIUDICC come fonte. Loghi, fotografie e marchi appartengono ai rispettivi titolari e non possono essere usati senza il loro permesso.",
-      "Bandi e dati. La bacheca riassume bandi di altre istituzioni. Date e requisiti possono cambiare: prima di candidarti, verificali sempre al link ufficiale. I dati dell'osservatorio sono aggregati e provvisori e verranno completati nel tempo.",
+      "Contenuti aperti. Salvo diversa indicazione, i contenuti di questo sito (testi, guide, rapporti e dati dell'osservatorio) sono pubblicati con licenza Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0), come richiede il programma Erasmus+: puoi copiarli, adattarli e condividerli citando RIUDICC come fonte. Le pubblicazioni, le testimonianze e gli articoli del blog appartengono ai rispettivi autori e sono riprodotti con il loro permesso; per riutilizzarli, consulta la licenza indicata in ciascuno o chiedi il permesso agli autori. Loghi, fotografie e marchi appartengono ai rispettivi titolari. Il codice del sito è aperto (licenza MIT) e pubblicato su GitHub.",
+      "Bandi e dati. La bacheca riassume bandi di altre istituzioni. Un agente di intelligenza artificiale aiuta a individuarli e riassumerli, e una persona del team controlla ciascuno prima di pubblicarlo. Date e requisiti possono comunque cambiare: prima di candidarti, verificali sempre al link ufficiale. I dati dell'osservatorio sono aggregati e provvisori e verranno completati nel tempo. Il modo in cui il sito viene mantenuto è spiegato nella pagina Sostenibilità.",
       "Ciò che invii. Inviando una testimonianza, una foto o una proposta confermi che è tua e che hai il permesso delle persone che vi compaiono. Ci autorizzi a pubblicarla su questo sito. Il coordinamento può rivederla, abbreviarla o non pubblicarla, e puoi chiedere in qualsiasi momento che venga corretta o rimossa.",
       "Servizi. La sezione Servizi descrive una proposta di accompagnamento della rete. I materiali del progetto resteranno gratuiti. Qualsiasi accompagnamento su misura sarà concordato per iscritto con l'università partner o l'ente che lo fornisce, alle sue condizioni.",
       "Link esterni. I link ad altri siti (università, bandi, social network) portano a pagine con proprie condizioni, di cui non siamo responsabili.",
@@ -1733,7 +1743,12 @@ window.INTERFAZ={
     "pr_none_p": "Prova con altre parole o rimuovi un filtro.",
     "nav_serv_todos": "Tutti i servizi",
     "qn_com_t": "Comunità",
-    "qn_com_p": "Esperienze di studenti e docenti in mobilità."
+    "qn_com_p": "Esperienze di studenti e docenti in mobilità.",
+    "nav_sost": "Sostenibilità",
+    "su_kicker": "Su questo spazio",
+    "su_title": "Sostenibilità e manutenzione",
+    "su_intro": "Come viene mantenuto questo spazio comunitario, chi se ne occupa e come resterà disponibile alla fine del finanziamento del progetto.",
+    "pr_lic": "Testo pubblicato con il permesso degli autori. Tutti i diritti riservati agli autori, salvo diversa licenza indicata."
   },
   "fr": {
     "lang_name": "Français",
@@ -1885,7 +1900,7 @@ window.INTERFAZ={
     "p_out_source": "Source",
     "p_out_to": "Envoyer à",
     "footer_disclaimer": "Cofinancé par l'Union européenne. Les points de vue et avis exprimés n'engagent toutefois que leur(s) auteur(s) et ne reflètent pas nécessairement ceux de l'Union européenne ou de l'autorité octroyant la subvention. Ni l'Union européenne ni l'autorité octroyant la subvention ne sauraient en être tenues pour responsables.",
-    "footer_text": "Espace communautaire du Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel, animé par les universités partenaires. Site officiel : <a href=\"https://riudicc.org/\">riudicc.org</a> · Contact du réseau : {mail}",
+    "footer_text": "Espace communautaire du Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel, animé par les universités partenaires. Site officiel : <a href=\"https://riudicc.org/\">riudicc.org</a> · Contact du réseau : {mail} · Contenus sous licence <a href=\"https://creativecommons.org/licenses/by/4.0/deed.fr\" rel=\"license noopener\" target=\"_blank\">CC BY 4.0</a>, sauf indication contraire.",
     "machine_note": "Traduction automatique, en attente de relecture par une personne de langue maternelle française.",
     "fallback_note": "Cette actualité n'est pas encore traduite en français ; elle est affichée en {lang}.",
     "eu_line": "Cofinancé par l'Union européenne",
@@ -1942,7 +1957,7 @@ window.INTERFAZ={
     "pv_title": "Confidentialité",
     "pv_draft": "Version provisoire en attente de relecture par la coordination du réseau.",
     "pv_body": [
-      "Ce site n'utilise ni cookies ni outils de suivi. Il n'enregistre ni visites ni données de navigation.",
+      "Ce site n'utilise pas de cookies. Pour savoir combien de personnes le visitent, il utilise GoatCounter, un compteur de visites sans cookies qui ne conserve ni adresses IP ni données personnelles et ne suit personne d'un site à l'autre : il n'enregistre que des chiffres agrégés, comme les pages vues, le pays approximatif, le type de navigateur et la page de provenance.",
       "Votre navigateur conserve seulement deux préférences sur votre appareil : la langue et l'apparence. Elles ne sont envoyées nulle part et vous pouvez les effacer en supprimant les données du site dans votre navigateur.",
       "Les polices sont chargées depuis Google Fonts, qui reçoit l'adresse IP des visiteurs. Elles seront ensuite hébergées sur le site lui-même pour l'éviter.",
       "Les formulaires de contact et de témoignage n'envoient rien par eux-mêmes : ils préparent un message que vous envoyez depuis votre propre messagerie, si vous le souhaitez. La photo d'un témoignage reste sur votre appareil jusqu'à ce que vous la joigniez. Ce que vous envoyez est reçu par la coordination du réseau, qui l'utilise uniquement pour vous répondre, examiner et publier votre proposition.",
@@ -2177,8 +2192,8 @@ window.INTERFAZ={
     "tm_title": "Conditions d'utilisation",
     "tm_body": [
       "Ceci est l'espace communautaire de RIUDICC, le Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel. Il est tenu par les universités partenaires et complète le site officiel, riudicc.org. En l'utilisant, vous acceptez ces conditions.",
-      "Contenu ouvert. Les résultats du projet publiés ici (textes, guides, rapports et données de l'observatoire) sont partagés gratuitement et en accès ouvert, comme l'exige le programme Erasmus+. Vous pouvez les réutiliser en citant RIUDICC comme source. Les logos, photographies et marques appartiennent à leurs titulaires et ne peuvent être utilisés sans leur autorisation.",
-      "Appels et données. Le tableau résume des appels d'autres institutions. Les dates et conditions peuvent changer : vérifiez-les toujours sur le lien officiel avant de postuler. Les données de l'observatoire sont agrégées et provisoires, et seront complétées au fil du temps.",
+      "Contenu ouvert. Sauf indication contraire, les contenus de ce site (textes, guides, rapports et données de l'observatoire) sont publiés sous licence Creative Commons Attribution 4.0 International (CC BY 4.0), comme l'exige le programme Erasmus+ : vous pouvez les copier, les adapter et les partager en citant RIUDICC comme source. Les publications, les témoignages et les articles du blog appartiennent à leurs auteurs et sont reproduits avec leur autorisation ; pour les réutiliser, consultez la licence indiquée sur chacun ou demandez l'autorisation aux auteurs. Les logos, photographies et marques appartiennent à leurs titulaires. Le code du site est ouvert (licence MIT) et publié sur GitHub.",
+      "Appels et données. Le tableau résume des appels d'autres institutions. Un agent d'intelligence artificielle aide à les repérer et à les résumer, et une personne de l'équipe vérifie chacun avant sa publication. Les dates et conditions peuvent toutefois changer : vérifiez-les toujours sur le lien officiel avant de postuler. Les données de l'observatoire sont agrégées et provisoires, et seront complétées au fil du temps. La manière dont le site est maintenu est expliquée sur la page Pérennité.",
       "Ce que vous envoyez. En envoyant un témoignage, une photo ou une proposition, vous confirmez qu'il vous appartient et que les personnes qui y figurent ont donné leur accord. Vous nous autorisez à le publier sur ce site. La coordination peut le relire, le raccourcir ou ne pas le publier, et vous pouvez demander à tout moment sa correction ou son retrait.",
       "Services. La section Services décrit une proposition d'accompagnement du réseau. Les ressources du projet resteront gratuites. Tout accompagnement sur mesure fera l'objet d'un accord écrit avec l'université partenaire ou l'organisme qui l'assure, selon ses propres conditions.",
       "Liens externes. Les liens vers d'autres sites (universités, appels, réseaux sociaux) mènent à des pages soumises à leurs propres conditions, dont nous ne sommes pas responsables.",
@@ -2310,6 +2325,11 @@ window.INTERFAZ={
     "pr_none_p": "Essayez d'autres mots ou retirez un filtre.",
     "nav_serv_todos": "Tous les services",
     "qn_com_t": "Communauté",
-    "qn_com_p": "Expériences d'étudiants et d'enseignants en mobilité."
+    "qn_com_p": "Expériences d'étudiants et d'enseignants en mobilité.",
+    "nav_sost": "Pérennité",
+    "su_kicker": "À propos de cet espace",
+    "su_title": "Pérennité et maintenance",
+    "su_intro": "Comment cet espace communautaire est entretenu, qui s'en occupe et comment il restera disponible à la fin du financement du projet.",
+    "pr_lic": "Texte publié avec l'autorisation des auteurs. Tous droits réservés aux auteurs, sauf autre licence indiquée."
   }
 };

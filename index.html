@@ -205,6 +205,7 @@ section.view.active{display:block}
 .article .content{display:grid;gap:1em;font-size:1.06rem}
 .article .content p{max-width:68ch}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.su-body{max-width:760px}.su-sec{margin:0 0 26px}.su-sec h2{font-size:1.2rem;margin:0 0 8px}.su-sec p{margin:0 0 .7em}
 .pf-busca input{width:100%;font:inherit;font-size:1.05rem;padding:13px 16px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
 .pf-busca input:focus{outline:2px solid #6cc4ee;outline-offset:1px}
 .pf-layout{display:grid;grid-template-columns:250px 1fr;gap:32px;margin-top:22px;align-items:start}
@@ -1608,6 +1609,19 @@ footer .social svg{width:16px;height:16px}
     </div>
   </section>
 
+  <section class="view" id="v-sostenibilidad" data-view="sostenibilidad">
+    <div class="wrap">
+      <div class="head">
+        <div class="kicker" data-i18n="su_kicker"></div>
+        <h1 data-i18n="su_title"></h1>
+        <p class="muted prose" data-i18n="su_intro"></p>
+      </div>
+      <p class="note" data-i18n="pv_draft"></p>
+      <p class="note" id="suNota" hidden></p>
+      <div class="prose su-body" id="suBody"></div>
+    </div>
+  </section>
+
   <section class="view" id="v-terminos" data-view="terminos">
     <div class="wrap">
       <div class="head">
@@ -1649,22 +1663,29 @@ footer .social svg{width:16px;height:16px}
       <p data-i18n="footer_disclaimer"></p>
       <p id="footerText"></p>
       <ul class="social" id="socialFoot"></ul>
-      <p class="foot-links"><a href="#contacto" data-i18n="nav_contacto"></a><a href="#privacidad" data-i18n="nav_privacidad"></a><a href="#terminos" data-i18n="tm_title"></a><a href="#creditos" data-i18n="cr_title"></a></p>
+      <p class="foot-links"><a href="#contacto" data-i18n="nav_contacto"></a><a href="#privacidad" data-i18n="nav_privacidad"></a><a href="#sostenibilidad" data-i18n="nav_sost"></a><a href="#terminos" data-i18n="tm_title"></a><a href="#creditos" data-i18n="cr_title"></a></p>
     </div>
   </div>
 </footer>
 
 <a class="as-fab" id="asFab" href="#asistente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-4 3.5V16H4z"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.3 2.4c-.5.2-.8.6-.8 1.1v.3"/><path d="M12 15h.01"/></svg><span data-i18n="as_fab"></span></a>
-<script src="data/interfaz.js?v=20261108p"></script>
-<script src="data/contenido.js?v=20261108p"></script>
-<script src="data/ofertas.js?v=20261108p"></script>
-<script src="data/comunidad.js?v=20261108p"></script>
-<script src="data/observatorio.js?v=20261108p"></script>
-<script src="data/mundo.js?v=20261108p"></script>
-<script src="data/observatorios.js?v=20261108p"></script>
-<script src="data/servicios.js?v=20261108p"></script>
-<script src="data/impacto.js?v=20261108p"></script>
-<script src="data/asistente.js?v=20261108p"></script>
+<script>
+/* Contador de visitas sin cookies (GoatCounter). Solo cuenta en el sitio público, no en copias ni pruebas. */
+window.goatcounter = {no_onload: true};
+window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
+if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
+</script>
+<script src="data/interfaz.js?v=20261108q"></script>
+<script src="data/contenido.js?v=20261108q"></script>
+<script src="data/ofertas.js?v=20261108q"></script>
+<script src="data/comunidad.js?v=20261108q"></script>
+<script src="data/observatorio.js?v=20261108q"></script>
+<script src="data/mundo.js?v=20261108q"></script>
+<script src="data/observatorios.js?v=20261108q"></script>
+<script src="data/servicios.js?v=20261108q"></script>
+<script src="data/impacto.js?v=20261108q"></script>
+<script src="data/asistente.js?v=20261108q"></script>
+<script src="data/sostenibilidad.js?v=20261108q"></script>
 <script>
 (function(){
 "use strict";
@@ -2122,7 +2143,7 @@ var pintarGuia = function(){
 $("#guToc").addEventListener("click", function(e){ var a = e.target.closest("a[data-sec]"); if (!a) return; e.preventDefault(); var el = document.getElementById(a.getAttribute("data-sec")); if (el) el.scrollIntoView({behavior: "smooth", block: "start"}); });
 var pintarTodo = function(){
   pintarEstaticos(); pintarInicio(); pintarRed(); pintarNoticias(); pintarFiltrosConv(); pintarConvocatorias();
-  pintarObservatorio(); pintarComunidad(); pintarProduccion(); pintarBlog(); pintarContacto(); pintarPrivacidad(); pintarServicios(); pintarImpacto(); pintarAsistente(); pintarInclusion(); pintarGuia(); pintarCreditos();
+  pintarObservatorio(); pintarComunidad(); pintarSostenibilidad(); pintarProduccion(); pintarBlog(); pintarContacto(); pintarPrivacidad(); pintarServicios(); pintarImpacto(); pintarAsistente(); pintarInclusion(); pintarGuia(); pintarCreditos();
   aplicarTema(); pintarGlobo(); pintarMovilidad(); mostrar(true);
 };
 
@@ -2244,6 +2265,7 @@ var pintarPublicacion = function(p){
       ((p.palabras_clave || []).length ? '<p class="small"><b>' + esc(t("pr_keywords")) + ':</b> ' + esc(p.palabras_clave.join("; ")) + '</p>' : '') + '</section>' : '') +
     '<div class="content"' + lg + '>' + limpiar(p.texto || "") + '</div>' +
     (p.nota ? '<p class="small muted paper-nota"' + lg + '><i>' + esc(p.nota) + '</i></p>' : '') +
+    '<p class="small muted">' + (p.licencia ? esc(p.licencia) : esc(t("pr_lic"))) + '</p>' +
     '<div class="paper-cita"><h2>' + esc(t("pr_cite")) + '</h2><p class="small">' + esc(citaPub(p)) + '</p>' +
     (p.pdf ? '<p><a class="btn ghost" href="' + esc(p.pdf) + '" download>' + esc(t("pr_pdf")) + '</a></p>' : '') + '</div>';
   return p.titulo;
@@ -2372,6 +2394,14 @@ var pintarCreditos = function(){
       (b.personas ? b.personas.map(function(p){ return '<p class="cr-p"><b>' + esc(p.nombre) + '</b>' + (p.inst ? '<span class="muted">' + esc(p.inst) + '</span>' : '') + '</p>'; }).join("") : '') +
       (b.texto ? [].concat(b.texto[lang] || b.texto.es).map(function(x){ return '<p class="muted">' + esc(x) + '</p>'; }).join("") : '') + '</section>';
   }).join("") + '<p class="small muted">' + esc(t("cr_version", {d: (function(){ try { return new Intl.DateTimeFormat(lang, {month: "long", year: "numeric"}).format(new Date(K.fecha + "-15")); } catch (e) { return K.fecha; } })()})) + '</p>';
+};
+var pintarSostenibilidad = function(){
+  var S = window.SOSTENIBILIDAD || {secciones: []}, otro = null;
+  $("#suBody").innerHTML = S.secciones.map(function(x){
+    var ti = enIdioma(x.titulo), ps = enIdioma(x.parrafos); if (ps.l !== lang) otro = ps.l;
+    return '<section class="su-sec"' + (ps.l !== lang ? ' lang="' + ps.l + '"' : '') + '><h2>' + esc(ti.v) + '</h2>' + [].concat(ps.v).map(function(q){ return '<p>' + esc(q) + '</p>'; }).join("") + '</section>';
+  }).join("");
+  notaIdioma("#suNota", otro || lang);
 };
 var pintarPrivacidad = function(){
   $("#pvBody").innerHTML = t("pv_body").map(function(p){ return "<p>" + esc(p) + "</p>"; }).join("");
@@ -2906,9 +2936,9 @@ document.addEventListener("click", function(e){
 });
 
 /* ---------- Navegación por anclas ---------- */
-var VISTAS = ["inicio", "red", "paquetes", "impacto", "asistente", "noticias", "blog", "convocatorias", "observatorio", "produccion", "testimonios", "contacto", "servicios", "inclusion", "guia", "terminos", "creditos", "privacidad"];
+var VISTAS = ["inicio", "red", "paquetes", "impacto", "asistente", "noticias", "blog", "convocatorias", "observatorio", "produccion", "testimonios", "contacto", "servicios", "inclusion", "guia", "terminos", "creditos", "privacidad", "sostenibilidad"];
 var PADRE = {noticia: "noticias", entrada: "blog", testimonio: "testimonios", publicacion: "produccion"};
-var TITULOS = {red: "nav_red", equipo: "nav_equipo", paquetes: "nav_paquetes", impacto: "nav_impacto", asistente: "as_title", noticias: "nav_noticias", blog: "nav_blog", convocatorias: "nav_convocatorias", observatorio: "grp_observatorio", produccion: "nav_produccion", testimonios: "nav_testimonios", redes: "nav_redes", participa: "nav_participa", contacto: "nav_contacto", servicios: "nav_servicios", inclusion: "nav_inclusion", guia: "nav_guia", terminos: "tm_title", creditos: "cr_title", privacidad: "nav_privacidad", noencontrada: "nf_title"};
+var TITULOS = {sostenibilidad: "su_title", red: "nav_red", equipo: "nav_equipo", paquetes: "nav_paquetes", impacto: "nav_impacto", asistente: "as_title", noticias: "nav_noticias", blog: "nav_blog", convocatorias: "nav_convocatorias", observatorio: "grp_observatorio", produccion: "nav_produccion", testimonios: "nav_testimonios", redes: "nav_redes", participa: "nav_participa", contacto: "nav_contacto", servicios: "nav_servicios", inclusion: "nav_inclusion", guia: "nav_guia", terminos: "tm_title", creditos: "cr_title", privacidad: "nav_privacidad", noencontrada: "nf_title"};
 function mostrar(sinScroll){
   var h = (location.hash || "#inicio").slice(1) || "inicio", vista = h, titulo = "", ancla = null;
   if (h === "equipo"){ vista = "contacto"; ancla = $("#ctCoord").hidden ? "ctObs" : "ctCoord"; }
@@ -2943,6 +2973,7 @@ function mostrar(sinScroll){
   /* Algunos móviles Android dejan restos de la página anterior al cambiar de vista: se fuerza un repintado completo */
   requestAnimationFrame(function(){ document.body.style.opacity = ".999"; requestAnimationFrame(function(){ document.body.style.opacity = ""; }); });
   if (vista === "observatorio" && window.MAPA_MEDIR){ window.MAPA_MEDIR(); if (window.MAPA_GIRAR) window.MAPA_GIRAR(); if (typeof pintarMovilidad === "function") pintarMovilidad(); }
+  if (window.CONTAR){ var intentos = 0, cuenta1 = function(){ if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path: "/" + h, title: document.title}); else if (++intentos < 10) setTimeout(cuenta1, 600); }; setTimeout(cuenta1, 50); }
   var activa = PADRE[vista] || vista;
   $$("nav.main a").forEach(function(a){ if (a.getAttribute("href") === "#" + activa) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   $$(".dd").forEach(function(d){ d.querySelector(".dd-btn").classList.toggle("current", !!d.querySelector('a[aria-current="page"]')); });

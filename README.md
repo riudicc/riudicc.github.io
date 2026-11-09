@@ -110,6 +110,14 @@ Normas: no publicar datos personales sin autorización escrita, ni documentos in
 
 El sitio se publica con **GitHub Pages**: *Settings › Pages › Deploy from a branch › `main` / root*.
 
+## Licencias
+
+Contenidos bajo CC BY 4.0 (salvo indicación) y código bajo licencia MIT. Detalles en [LICENSE.md](LICENSE.md).
+
+## Visitas
+
+El sitio cuenta visitas con GoatCounter (sin cookies), solo en `riudicc.github.io` y `riudicc.org`. El panel está en https://riudicc.goatcounter.com una vez creada la cuenta con el código `riudicc`.
+
 ## Créditos
 
 Plataforma digital, comunicación y difusión (WP6): Universidad Politécnica Salesiana (UPS). Los créditos completos están en el sitio.
