@@ -591,7 +591,10 @@ window.INTERFAZ={
     "fc_prog_v": "Erasmus+ · Desarrollo de capacidades en educación superior",
     "fc_dates": "Duración",
     "fc_coord": "Coordina",
-    "fc_link": "Ver la ficha en la Plataforma de Resultados de Erasmus+"
+    "fc_link": "Ver la ficha en la Plataforma de Resultados de Erasmus+",
+    "obs_lead_kicker": "Dirige el observatorio",
+    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
+    "obs_lead_p": "Lidera el paquete de trabajo 7, «Construcción de medidas sostenibles para el futuro de la alianza». Cada universidad socia gestiona su propio micro-observatorio."
   },
   "en": {
     "lang_name": "English",
@@ -1180,7 +1183,10 @@ window.INTERFAZ={
     "fc_prog_v": "Erasmus+ · Capacity Building in Higher Education",
     "fc_dates": "Duration",
     "fc_coord": "Coordinator",
-    "fc_link": "View the record on the Erasmus+ Project Results Platform"
+    "fc_link": "View the record on the Erasmus+ Project Results Platform",
+    "obs_lead_kicker": "Observatory led by",
+    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
+    "obs_lead_p": "Leader of work package 7, “Building sustainable measures for the future of the alliance”. Each partner university runs its own micro-observatory."
   },
   "it": {
     "lang_name": "Italiano",
@@ -1769,7 +1775,10 @@ window.INTERFAZ={
     "fc_prog_v": "Erasmus+ · Sviluppo delle capacità nell'istruzione superiore",
     "fc_dates": "Durata",
     "fc_coord": "Coordinatore",
-    "fc_link": "Vedi la scheda sulla piattaforma dei risultati Erasmus+"
+    "fc_link": "Vedi la scheda sulla piattaforma dei risultati Erasmus+",
+    "obs_lead_kicker": "Osservatorio coordinato da",
+    "obs_lead_name": "Universidad del Azuay (UDA), Ecuador",
+    "obs_lead_p": "Coordina il pacchetto di lavoro 7, «Costruzione di misure sostenibili per il futuro dell'alleanza». Ogni università partner gestisce il proprio micro-osservatorio."
   },
   "fr": {
     "lang_name": "Français",
@@ -2358,6 +2367,9 @@ window.INTERFAZ={
     "fc_prog_v": "Erasmus+ · Renforcement des capacités dans l'enseignement supérieur",
     "fc_dates": "Durée",
     "fc_coord": "Coordination",
-    "fc_link": "Voir la fiche sur la plateforme des résultats Erasmus+"
+    "fc_link": "Voir la fiche sur la plateforme des résultats Erasmus+",
+    "obs_lead_kicker": "Observatoire coordonné par",
+    "obs_lead_name": "Universidad del Azuay (UDA), Équateur",
+    "obs_lead_p": "Responsable du lot de travail 7, « Construire des mesures durables pour l'avenir de l'alliance ». Chaque université partenaire gère son propre micro-observatoire."
   }
 };
