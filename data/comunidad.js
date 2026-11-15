@@ -414,6 +414,53 @@ window.COMUNIDAD={
  ],
  "blog": [
   {
+   "slug": "perspectiva-educativa-chiapas-sectores-vulnerables",
+   "titulo": {
+    "es": "Perspectiva educativa en Chiapas, México, ante sectores vulnerables"
+   },
+   "autor": "Claudia Araceli Madariaga Aguilar",
+   "cargo": "Universidad Politécnica de Chiapas (UPChiapas)",
+   "institucion": "universidad_politecnica_chiapas",
+   "evento": "",
+   "fecha": "2026-11-15",
+   "extracto": {
+    "es": "Según la OCDE, el origen familiar sigue influyendo en quién llega a la universidad. Desde Chiapas, las universidades politécnicas llevan la educación superior a comunidades donde no se imaginaba que podía llegar una universidad, y RIUDICC abre esas aulas al mundo…"
+   },
+   "texto": {
+    "es": "<p>De acuerdo con el informe <i>Education at a Glance 2025</i> de la OCDE, que ofrece estadísticas nacionales comparables sobre el estado de la educación en todo el mundo, a pesar del crecimiento general en la obtención de títulos superiores, el origen familiar sigue influyendo notablemente en quiénes acceden a la educación superior. En 2023, solo el 26 % de los jóvenes adultos de familias con menor nivel educativo tenía una titulación superior, frente al 70 % de quienes provenían de hogares con un alto nivel educativo. Las barreras económicas y el escaso apoyo académico y social suelen frenar a los estudiantes desfavorecidos (OCDE, 2025).</p><p>Según el mismo informe, las bajas tasas de finalización de la educación superior también socavan el retorno de la inversión pública, agravan la escasez de competencias y limitan el acceso a oportunidades. Por ello, sería de gran ayuda fortalecer la preparación académica y diseñar programas de educación superior con secuencias de cursos claramente definidas y medidas de apoyo para quienes corren el riesgo de quedarse atrás.</p><p>México tiene diversos sistemas educativos en el nivel superior. En esta ocasión nos vamos a centrar en el Modelo Educativo de las Universidades del Subsistema Tecnológico, implementado a partir de 2024, que tiene como ejes rectores la equidad, el desarrollo, la productividad y el bienestar social, y que privilegia el aprendizaje a través de competencias profesionales (DGUTyP, 2024). Sin embargo, es necesario fortalecer su pertinencia, impulsando el desarrollo humano integral del estudiante, con pensamiento crítico, y su participación en el fortalecimiento del tejido social.</p><p>El propósito de este subsistema es responder a las necesidades de la población, enfrentando los avances tecnológicos y científicos con una educación innovadora. Con esta descentralización de los servicios de educación superior se brinda acceso a las comunidades marginadas, ya que las universidades politécnicas en México se encuentran en zonas de difícil acceso. Esto es un reto y, a la vez, un área de oportunidad, porque estas universidades han llegado a pequeñas comunidades donde no se imaginaba que podía llegar una universidad. Son también un detonador económico para el lugar y un espacio donde se fortalece el vínculo social, por el impacto que tienen en las comunidades que las rodean.</p><p>La Universidad Politécnica de Chiapas cumple las funciones sustantivas de docencia, investigación y desarrollo tecnológico, además de la extensión universitaria. Esta última se orienta a promover la innovación científica y a incrementar la sensibilidad social hacia la tecnología. La educación continua, por su parte, se encauza a la capacitación para el trabajo y al fomento de la cultura tecnológica en la entidad y la región, al fortalecimiento de la vinculación entre la escuela y las unidades económicas, y al fomento de la investigación vinculada con las necesidades de los sectores productivos de bienes y servicios.</p><p>La vinculación con los sectores público, privado y social ha sido un eje común necesario para mantener la pertinencia de los programas educativos y atender eficientemente la demanda de educación superior del país: optimiza recursos, ofrece oportunidades de movilidad nacional e internacional a las y los estudiantes y atiende los requerimientos de los sectores productivos y sociales, a fin de impulsar su desarrollo y la innovación de productos y servicios.</p><p>Por ello, en materia de internacionalización, la Universidad ha realizado diversas acciones que han sido punta de lanza para impulsar la movilidad internacional. Un caso concreto es el apoyo del Gobierno federal de México, a través de la Secretaría de Educación Pública, que benefició a 100 alumnos con becas para una estancia corta en Estados Unidos y Canadá. Otro es la oportunidad de recibir a tres jóvenes de Haití, que obtuvieron su título universitario en Ingeniería Agroindustrial. Además, gracias a los vínculos que establecen los docentes, que son pieza clave, otros jóvenes han tenido la oportunidad cultural, educativa y recreativa de desarrollar proyectos en otros países de América Latina y Europa.</p><p>En este caminar internacional, la Red Internacional de Universidades para el Desarrollo Inclusivo y el Intercambio Científico y Cultural (RIUDICC) ha significado un impulso para la comunidad universitaria de la UPChiapas. Ha intervenido de manera favorable en la formación de los alumnos con cursos especializados, con contenidos de las mejores universidades y empresas líderes a nivel global, que hoy son una realidad para los estudiantes de la Universidad Politécnica de Chiapas y también para los docentes. Es de vital importancia la capacitación permanente, que forme y actualice constantemente a los profesores, con un liderazgo de visión compartida orientado hacia el conocimiento.</p><p>Sin duda, RIUDICC apuesta por la formación internacional y se perfila como un potente vehículo para el desarrollo de las comunidades vulnerables. Establecer nuevos vínculos académicos permite reducir la brecha en el intercambio cultural y fomentar la interculturalidad.</p><h3>Referencias</h3><ul><li>Aguilar, V. (2019). Modelos educativos en el nivel superior en México: factores que favorecen y obstaculizan su implementación. <i>Atenas</i>, 3(47), 18–33.</li><li>Dirección General de Universidades Tecnológicas y Politécnicas [DGUTyP]. (2024). <i>Nuevo Modelo Educativo de las Universidades del Subsistema Tecnológico</i> [documento PDF].</li><li>OCDE. (2025). <i>Education at a Glance 2025: OECD Indicators</i>. OECD Publishing. <a href=\"https://doi.org/10.1787/1c0d9c79-en\">https://doi.org/10.1787/1c0d9c79-en</a></li></ul>"
+   },
+   "imagenes": [
+    {
+     "src": "img/blog/upchiapas-intercambio-haiti.jpg",
+     "alt": {
+      "es": "Tarjeta de presentación de Richecarde Lafrance, egresado haitiano de la UPChiapas."
+     },
+     "pie": {
+      "es": "Intercambio académico de Haití. Orgullosamente egresado en Ing. Agroindustrial de la UPChiapas."
+     }
+    },
+    {
+     "src": "img/blog/upchiapas-estancia-doctoral.jpg",
+     "alt": {
+      "es": "Estudiante de doctorado frente a la entrada del Conservatoire National des Arts et Métiers, en París."
+     },
+     "pie": {
+      "es": "Movilidad y estancia doctoral (6 meses) de Rafael de Jesús Borralles Linarte, estudiante del Doctorado en Ingeniería."
+     }
+    },
+    {
+     "src": "img/blog/upchiapas-movilidad-upc.jpg",
+     "alt": {
+      "es": "Cinco estudiantes de la UPChiapas frente a la Facultat d'Informàtica de Barcelona."
+     },
+     "pie": {
+      "es": "Movilidad (3 meses) de alumnos de Ing. en Tecnologías de la Información e Innovación Digital. Universidad Politécnica de Cataluña, España."
+     }
+    }
+   ],
+   "permiso": true
+  },
+  {
    "slug": "quien-es-la-mas-vulnerable",
    "titulo": {
     "es": "¿Quién es la más vulnerable?"
