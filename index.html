@@ -1692,7 +1692,7 @@ if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; 
 <script src="data/interfaz.js?v=20261109f"></script>
 <script src="data/contenido.js?v=20261109f"></script>
 <script src="data/ofertas.js?v=20261109f"></script>
-<script src="data/comunidad.js?v=20261115a"></script>
+<script src="data/comunidad.js?v=20261115b"></script>
 <script src="data/observatorio.js?v=20261109f"></script>
 <script src="data/mundo.js?v=20261109f"></script>
 <script src="data/observatorios.js?v=20261109f"></script>
@@ -2262,7 +2262,7 @@ var recorta = function(x, n){ x = String(x || ""); if (x.length <= n) return x; 
 var citaPub = function(p){
   var ap = p.autores_cita || (p.autores || []).map(function(a){ var w = a.trim().split(/\s+/); var ape = w.length > 2 ? w.slice(-2).join(" ") : w.slice(-1)[0]; var ini = w.slice(0, w.length > 2 ? -2 : -1).map(function(x){ return x.charAt(0) + "."; }).join(" "); return ape + ", " + ini; });
   var au = ap.length > 1 ? ap.slice(0, -1).join(", ") + " y " + ap[ap.length - 1] : ap[0] || "";
-  return au + " (" + (p.anio || "s. f.") + "). " + p.titulo + ". " + (p.tipo ? p.tipo + " presentada en " : "") + (p.revista_evento || "") + ". RIUDICC. " + (p.doi ? doiUrl(p) : "https://riudicc.github.io/#" + pubId(p));
+  return au + " (" + (p.anio || "s. f.") + "). " + p.titulo + ". " + (p.tipo ? p.tipo + (p.revista_evento ? " presentada en " : "") : "") + (p.revista_evento || "") + ". RIUDICC. " + (p.doi ? doiUrl(p) : "https://riudicc.github.io/#" + pubId(p));
 };
 var ORCID_ICO = '<svg class="orcid" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><path fill="#fff" d="M8.3 7.6a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0ZM6.6 9.3h1.6v7.6H6.6zM10 9.3h4.3c2.3 0 3.7 1.6 3.7 3.8 0 2.2-1.5 3.8-3.7 3.8H10zm1.6 1.4v4.8h2.6c1.6 0 2.4-1.1 2.4-2.4 0-1.4-.9-2.4-2.4-2.4z"/></svg>';
 var autoresHtml = function(p){ return (p.autores || []).map(function(a, i){ var o = (p.orcid || [])[i]; return esc(a) + (o ? ' <a class="orcid-a" href="https://orcid.org/' + esc(o) + '" target="_blank" rel="noopener" title="ORCID ' + esc(o) + '">' + ORCID_ICO + '<span class="sr-only">ORCID ' + esc(o) + '</span></a>' : ''); }).join(", "); };
