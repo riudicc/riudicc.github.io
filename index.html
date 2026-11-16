@@ -252,6 +252,7 @@ section.view.active{display:block}
 .article .content blockquote.cita{font-style:italic;color:var(--muted,#555)}
 .article .content blockquote.dicho{border-left-color:#f6c544}
 .article .content blockquote.dicho+blockquote.dicho{margin-top:-.4em}
+.paper-fig{margin:.6em 0 1em;max-width:680px}.paper-fig img{display:block;width:100%;height:auto;border:1px solid var(--line,#e4e7eb)}.paper-fig figcaption{font-size:.88rem;color:var(--muted,#555);margin-top:.5em;line-height:1.45}
 .post-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:2em;align-items:start}.post-figs figure{margin:0}.post-figs img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:var(--card,#f5f5f5)}.post-figs figcaption{font-size:.88rem;color:var(--muted,#555);margin-top:.5em;line-height:1.4}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .back{font-weight:600;text-decoration:none}
@@ -1692,7 +1693,7 @@ if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; 
 <script src="data/interfaz.js?v=20261109f"></script>
 <script src="data/contenido.js?v=20261109f"></script>
 <script src="data/ofertas.js?v=20261109f"></script>
-<script src="data/comunidad.js?v=20261115b"></script>
+<script src="data/comunidad.js?v=20261115c"></script>
 <script src="data/observatorio.js?v=20261109f"></script>
 <script src="data/mundo.js?v=20261109f"></script>
 <script src="data/observatorios.js?v=20261109f"></script>
@@ -2267,6 +2268,15 @@ var citaPub = function(p){
 var ORCID_ICO = '<svg class="orcid" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><path fill="#fff" d="M8.3 7.6a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0ZM6.6 9.3h1.6v7.6H6.6zM10 9.3h4.3c2.3 0 3.7 1.6 3.7 3.8 0 2.2-1.5 3.8-3.7 3.8H10zm1.6 1.4v4.8h2.6c1.6 0 2.4-1.1 2.4-2.4 0-1.4-.9-2.4-2.4-2.4z"/></svg>';
 var autoresHtml = function(p){ return (p.autores || []).map(function(a, i){ var o = (p.orcid || [])[i]; return esc(a) + (o ? ' <a class="orcid-a" href="https://orcid.org/' + esc(o) + '" target="_blank" rel="noopener" title="ORCID ' + esc(o) + '">' + ORCID_ICO + '<span class="sr-only">ORCID ' + esc(o) + '</span></a>' : ''); }).join(", "); };
 var doiUrl = function(p){ return p.doi ? "https://doi.org/" + p.doi : ""; };
+/* Figuras de una publicación: en el texto, un párrafo «[[figura-N]]» se sustituye por la figura N de p.figuras */
+var conFiguras = function(html, p){
+  var F = p.figuras || [];
+  return html.replace(/<p>\s*\[\[figura-(\d+)\]\]\s*<\/p>/g, function(m, n){
+    var f = F[+n - 1];
+    if (!f || !/^img\/publicaciones\/[a-z0-9._-]+$/i.test(f.src || "")) return "";
+    return '<figure class="paper-fig"><img src="' + esc(f.src) + '" alt="' + esc(f.alt || "") + '" loading="lazy">' + (f.pie ? '<figcaption>' + esc(f.pie) + '</figcaption>' : '') + '</figure>';
+  });
+};
 var pintarPublicacion = function(p){
   var lg = p.idioma && p.idioma !== lang ? ' lang="' + esc(p.idioma) + '"' : '';
   $("#pubDetalle").innerHTML = '<a class="back" href="#produccion">' + esc(t("pr_back")) + '</a>' +
@@ -2277,7 +2287,7 @@ var pintarPublicacion = function(p){
     (p.pdf ? '<p><a class="btn primary" href="' + esc(p.pdf) + '" download>' + esc(t("pr_pdf")) + '</a></p>' : '') + '</header>' +
     (p.resumen ? '<section class="paper-abs"' + lg + '><h2>' + esc(t("pr_abstract")) + '</h2><p>' + esc(p.resumen) + '</p>' +
       ((p.palabras_clave || []).length ? '<p class="small"><b>' + esc(t("pr_keywords")) + ':</b> ' + esc(p.palabras_clave.join("; ")) + '</p>' : '') + '</section>' : '') +
-    '<div class="content"' + lg + '>' + limpiar(p.texto || "") + '</div>' +
+    '<div class="content"' + lg + '>' + conFiguras(limpiar(p.texto || ""), p) + '</div>' +
     (p.nota ? '<p class="small muted paper-nota"' + lg + '><i>' + esc(p.nota) + '</i></p>' : '') +
     '<p class="small muted">' + (p.licencia ? esc(p.licencia) : esc(t("pr_lic"))) + '</p>' +
     '<div class="paper-cita"><h2>' + esc(t("pr_cite")) + '</h2><p class="small">' + esc(citaPub(p)) + '</p>' +
@@ -2291,7 +2301,7 @@ var pintarProduccion = function(){
   var P = (C.produccion || []).slice();
   if (!P.length){ $("#pubs").innerHTML = '<div class="empty"><h3>' + esc(t("pr_empty_h")) + '</h3><p class="muted">' + t("pr_empty_p") + '</p></div>'; return; }
   var campos = {tipo: function(p){ return [p.tipo || "—"]; }, anio: function(p){ return [String(p.anio || "—")]; }, inst: function(p){ return p.institucion ? [p.institucion] : []; }, tema: function(p){ return p.temas || []; }};
-  var txt = function(p){ return norm([p.titulo, (p.autores || []).join(" "), p.institucion, p.revista_evento, p.resumen, (p.palabras_clave || []).join(" "), (p.temas || []).join(" "), String(p.texto || "").replace(/<[^>]+>/g, " ")].join(" ")); };
+  var txt = function(p){ return norm([p.titulo, (p.autores || []).join(" "), p.institucion, p.revista_evento, p.resumen, (p.palabras_clave || []).join(" "), (p.temas || []).join(" "), String(p.texto || "").replace(/<[^>]+>/g, " ").replace(/\[\[figura-\d+\]\]/g, " ")].join(" ")); };
   var pasa = function(p, salvo){
     if (prQ && norm(prQ).split(/\s+/).some(function(w){ return w && txt(p).indexOf(w) < 0; })) return false;
     return Object.keys(prSel).every(function(f){ if (f === salvo) return true; var on = Object.keys(prSel[f]); return !on.length || campos[f](p).some(function(v){ return prSel[f][v]; }); });
