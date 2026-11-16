@@ -1073,6 +1073,31 @@ footer .social{margin-top:14px}
 footer .social a{width:32px;height:32px}
 footer .social svg{width:16px;height:16px}
 @media (max-width:900px){header.top{backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* Pie en franjas: logos de la red · redes y enlaces útiles · aviso UE · enlaces legales */
+footer .wrap.foot{display:block}
+footer .foot>*+*{border-top:1px solid var(--line);margin-top:22px;padding-top:22px}
+.foot-logos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 26px}
+@media (min-width:1000px){.foot-logos{justify-content:space-between;gap:16px 20px}}
+.foot-logos li{flex:none}
+.foot-logos a{display:block;line-height:0;border-radius:4px}
+.foot-logos img{height:30px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);opacity:.85;transition:filter .2s,opacity .2s}
+.foot-logos a:hover img,.foot-logos a:focus-visible img{filter:none;opacity:1}
+.foot-mid{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:20px 40px}
+.foot-h{font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 12px;letter-spacing:0}
+.foot-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.foot-cols ul{list-style:none;margin:0;padding:0 14px;border-left:1px solid var(--line)}
+.foot-cols li+li{margin-top:6px}
+.foot-cols a{color:var(--ink);text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--line);font-size:var(--fs-sm)}
+.foot-cols a:hover{text-decoration-color:currentColor}
+.foot-eu{display:flex;align-items:center;gap:28px;justify-content:space-between}
+.foot-eu p{margin:0;max-width:820px;font-size:var(--fs-xs);line-height:1.45}
+.foot-eu .eu{flex:none}
+.foot-bottom{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 28px}
+.foot-bottom #footerText{margin:0;flex:1 1 380px;font-size:var(--fs-xs);line-height:1.45}
+.foot-bottom .foot-links{margin:0;flex:0 1 auto;gap:8px 16px}
+@media (max-width:900px){.foot-cols{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:14px}}
+@media (max-width:700px){.foot-mid{grid-template-columns:1fr}.foot-eu{flex-direction:column-reverse;align-items:flex-start;gap:12px}.foot-logos{gap:14px 22px}}
 </style>
 </head>
 <body>
@@ -1672,12 +1697,29 @@ footer .social svg{width:16px;height:16px}
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="eu"><svg class="eu-flag" viewBox="0 0 60 40" role="img" aria-label="Bandera de la Unión Europea"><rect width="60" height="40" fill="#003399"/><g fill="#FFCC00"><polygon points="43.33,17.78 43.83,19.31 45.45,19.31 44.14,20.26 44.64,21.80 43.33,20.85 42.03,21.80 42.53,20.26 41.22,19.31 42.83,19.31"/><polygon points="41.55,24.44 42.05,25.98 43.66,25.98 42.35,26.93 42.85,28.46 41.55,27.52 40.24,28.46 40.74,26.93 39.43,25.98 41.05,25.98"/><polygon points="36.67,29.32 37.17,30.86 38.78,30.86 37.47,31.81 37.97,33.34 36.67,32.40 35.36,33.34 35.86,31.81 34.55,30.86 36.17,30.86"/><polygon points="30.00,31.11 30.50,32.65 32.11,32.65 30.81,33.60 31.31,35.13 30.00,34.18 28.69,35.13 29.19,33.60 27.89,32.65 29.50,32.65"/><polygon points="23.33,29.32 23.83,30.86 25.45,30.86 24.14,31.81 24.64,33.34 23.33,32.40 22.03,33.34 22.53,31.81 21.22,30.86 22.83,30.86"/><polygon points="18.45,24.44 18.95,25.98 20.57,25.98 19.26,26.93 19.76,28.46 18.45,27.52 17.15,28.46 17.65,26.93 16.34,25.98 17.95,25.98"/><polygon points="16.67,17.78 17.17,19.31 18.78,19.31 17.47,20.26 17.97,21.80 16.67,20.85 15.36,21.80 15.86,20.26 14.55,19.31 16.17,19.31"/><polygon points="18.45,11.11 18.95,12.65 20.57,12.65 19.26,13.60 19.76,15.13 18.45,14.18 17.15,15.13 17.65,13.60 16.34,12.65 17.95,12.65"/><polygon points="23.33,6.23 23.83,7.77 25.45,7.77 24.14,8.72 24.64,10.25 23.33,9.30 22.03,10.25 22.53,8.72 21.22,7.77 22.83,7.77"/><polygon points="30.00,4.44 30.50,5.98 32.11,5.98 30.81,6.93 31.31,8.46 30.00,7.52 28.69,8.46 29.19,6.93 27.89,5.98 29.50,5.98"/><polygon points="36.67,6.23 37.17,7.77 38.78,7.77 37.47,8.72 37.97,10.25 36.67,9.30 35.36,10.25 35.86,8.72 34.55,7.77 36.17,7.77"/><polygon points="41.55,11.11 42.05,12.65 43.66,12.65 42.35,13.60 42.85,15.13 41.55,14.18 40.24,15.13 40.74,13.60 39.43,12.65 41.05,12.65"/></g></svg><span data-i18n-html="eu"></span></div>
-    <div>
+  <div class="wrap foot">
+    <ul class="foot-logos" id="footLogos" data-i18n-aria="foot_partners"></ul>
+    <div class="foot-mid">
+      <div class="foot-follow">
+        <h2 class="foot-h" data-i18n="foot_follow"></h2>
+        <ul class="social" id="socialFoot"></ul>
+      </div>
+      <nav class="foot-useful" aria-labelledby="footUsefulH">
+        <h2 class="foot-h" id="footUsefulH" data-i18n="foot_links"></h2>
+        <div class="foot-cols">
+          <ul><li><a href="#red" data-i18n="nav_sobre"></a></li><li><a href="#paquetes" data-i18n="nav_paquetes"></a></li><li><a href="#impacto" data-i18n="nav_impacto"></a></li></ul>
+          <ul><li><a href="#convocatorias" data-i18n="nav_convocatorias"></a></li><li><a href="#servicios" data-i18n="nav_serv_todos"></a></li><li><a href="#guia" data-i18n="nav_guia"></a></li></ul>
+          <ul><li><a href="#produccion" data-i18n="nav_produccion"></a></li><li><a href="#blog" data-i18n="nav_blog"></a></li><li><a href="#noticias" data-i18n="nav_noticias"></a></li></ul>
+          <ul><li><a href="#observatorio" data-i18n="nav_cifras"></a></li><li><a href="#inclusion" data-i18n="nav_inclusion"></a></li><li><a href="#testimonios" data-i18n="nav_testimonios"></a></li></ul>
+        </div>
+      </nav>
+    </div>
+    <div class="foot-eu">
       <p data-i18n="footer_disclaimer"></p>
+      <div class="eu"><svg class="eu-flag" viewBox="0 0 60 40" role="img" aria-label="Bandera de la Unión Europea"><rect width="60" height="40" fill="#003399"/><g fill="#FFCC00"><polygon points="43.33,17.78 43.83,19.31 45.45,19.31 44.14,20.26 44.64,21.80 43.33,20.85 42.03,21.80 42.53,20.26 41.22,19.31 42.83,19.31"/><polygon points="41.55,24.44 42.05,25.98 43.66,25.98 42.35,26.93 42.85,28.46 41.55,27.52 40.24,28.46 40.74,26.93 39.43,25.98 41.05,25.98"/><polygon points="36.67,29.32 37.17,30.86 38.78,30.86 37.47,31.81 37.97,33.34 36.67,32.40 35.36,33.34 35.86,31.81 34.55,30.86 36.17,30.86"/><polygon points="30.00,31.11 30.50,32.65 32.11,32.65 30.81,33.60 31.31,35.13 30.00,34.18 28.69,35.13 29.19,33.60 27.89,32.65 29.50,32.65"/><polygon points="23.33,29.32 23.83,30.86 25.45,30.86 24.14,31.81 24.64,33.34 23.33,32.40 22.03,33.34 22.53,31.81 21.22,30.86 22.83,30.86"/><polygon points="18.45,24.44 18.95,25.98 20.57,25.98 19.26,26.93 19.76,28.46 18.45,27.52 17.15,28.46 17.65,26.93 16.34,25.98 17.95,25.98"/><polygon points="16.67,17.78 17.17,19.31 18.78,19.31 17.47,20.26 17.97,21.80 16.67,20.85 15.36,21.80 15.86,20.26 14.55,19.31 16.17,19.31"/><polygon points="18.45,11.11 18.95,12.65 20.57,12.65 19.26,13.60 19.76,15.13 18.45,14.18 17.15,15.13 17.65,13.60 16.34,12.65 17.95,12.65"/><polygon points="23.33,6.23 23.83,7.77 25.45,7.77 24.14,8.72 24.64,10.25 23.33,9.30 22.03,10.25 22.53,8.72 21.22,7.77 22.83,7.77"/><polygon points="30.00,4.44 30.50,5.98 32.11,5.98 30.81,6.93 31.31,8.46 30.00,7.52 28.69,8.46 29.19,6.93 27.89,5.98 29.50,5.98"/><polygon points="36.67,6.23 37.17,7.77 38.78,7.77 37.47,8.72 37.97,10.25 36.67,9.30 35.36,10.25 35.86,8.72 34.55,7.77 36.17,7.77"/><polygon points="41.55,11.11 42.05,12.65 43.66,12.65 42.35,13.60 42.85,15.13 41.55,14.18 40.24,15.13 40.74,13.60 39.43,12.65 41.05,12.65"/></g></svg><span data-i18n-html="eu"></span></div>
+    </div>
+    <div class="foot-bottom">
       <p id="footerText"></p>
-      <ul class="social" id="socialFoot"></ul>
       <p class="foot-links"><a href="#contacto" data-i18n="nav_contacto"></a><a href="#privacidad" data-i18n="nav_privacidad"></a><a href="#sostenibilidad" data-i18n="nav_sost"></a><a href="#terminos" data-i18n="tm_title"></a><a href="#creditos" data-i18n="cr_title"></a></p>
     </div>
   </div>
@@ -1690,7 +1732,7 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261109f"></script>
+<script src="data/interfaz.js?v=20261116a"></script>
 <script src="data/contenido.js?v=20261109f"></script>
 <script src="data/ofertas.js?v=20261109f"></script>
 <script src="data/comunidad.js?v=20261115c"></script>
@@ -1821,6 +1863,15 @@ var pintarEstaticos = function(){
   $("#mainNav").setAttribute("aria-label", t("menu"));
   $("#newsFilters").setAttribute("aria-label", t("filter_country"));
   $("#footerText").innerHTML = t("footer_text", {mail: esc(C.correo_red || "")});
+  $("#footLogos").innerHTML = (D.socios || []).concat(D.asociados || []).filter(function(u){ return u.logo; }).map(function(u){
+    var T = u.textos || {}, n = (T[lang] || T.es || T.en || {}).name || "";
+    return '<li><a href="' + esc(u.web || "#red") + '" target="_blank" rel="noopener" title="' + esc(n) + '"><img src="' + esc(u.logo) + '" alt="' + esc(n) + '" loading="lazy"></a></li>';
+  }).join("");
+  /* Mismo peso visual para logos anchos y cuadrados: se igualan por área, no por altura */
+  $$("#footLogos img").forEach(function(im){
+    var ajustar = function(){ var r = im.naturalWidth / im.naturalHeight; if (!r) return; im.style.height = Math.round(Math.max(18, Math.min(34, Math.sqrt(1800 / r)))) + "px"; };
+    if (im.complete) ajustar(); else im.addEventListener("load", ajustar);
+  });
   var mt = t("machine_note") && !REVISADO[lang];
   $("#mtNote").hidden = !mt; $("#mtNote .wrap").textContent = mt ? t("machine_note") : "";
   var ln = t("calls_lang_note");
