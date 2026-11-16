@@ -1863,7 +1863,7 @@ var pintarEstaticos = function(){
   $("#mainNav").setAttribute("aria-label", t("menu"));
   $("#newsFilters").setAttribute("aria-label", t("filter_country"));
   $("#footerText").innerHTML = t("footer_text", {mail: esc(C.correo_red || "")});
-  $("#footLogos").innerHTML = (D.socios || []).concat(D.asociados || []).filter(function(u){ return u.logo; }).map(function(u){
+  $("#footLogos").innerHTML = (D.socios || []).filter(function(u){ return u.logo; }).map(function(u){
     var T = u.textos || {}, n = (T[lang] || T.es || T.en || {}).name || "";
     return '<li><a href="' + esc(u.web || "#red") + '" target="_blank" rel="noopener" title="' + esc(n) + '"><img src="' + esc(u.logo) + '" alt="' + esc(n) + '" loading="lazy"></a></li>';
   }).join("");
