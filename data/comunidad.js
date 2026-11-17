@@ -685,6 +685,14 @@ window.COMUNIDAD={
  "menciones": [
   {
    "red": "linkedin",
+   "autor": "RIUDICC",
+   "fecha": "2026-11-16",
+   "titulo": "Encuentro «Ciencia sin fronteras: Europa y América Latina conectadas por las Ciencias Sociales» en la UCM",
+   "imagen": "img/menciones/linkedin-riudicc-ciencia-sin-fronteras.jpg",
+   "url": "https://www.linkedin.com/feed/update/urn:li:share:7528136382117015554/"
+  },
+  {
+   "red": "linkedin",
    "autor": "José A. Ruiz San Román (UCM)",
    "fecha": "2026-10-31",
    "titulo": "Intensos días de trabajo en la Universidad del Azuay con el proyecto RIUDICC",
