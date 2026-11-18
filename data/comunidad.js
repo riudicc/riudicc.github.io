@@ -692,12 +692,44 @@ window.COMUNIDAD={
    "url": "https://www.linkedin.com/feed/update/urn:li:share:7528136382117015554/"
   },
   {
+   "red": "instagram",
+   "autor": "UPChiapas",
+   "fecha": "2026-11-11",
+   "titulo": "Convocatoria de Becas 2026-2027 RIUDICC: cursos en línea para estudiantes de la UPChiapas",
+   "imagen": "img/menciones/instagram-upchiapas-becas.jpg",
+   "url": "https://www.instagram.com/p/Dfm5x6pTeRK/"
+  },
+  {
+   "red": "instagram",
+   "autor": "Relaciones Internacionales UDA",
+   "fecha": "2026-11-06",
+   "titulo": "Balance del III Encuentro Internacional Universitario de Internacionalización",
+   "imagen": "img/menciones/instagram-uda-balance-encuentro.jpg",
+   "url": "https://www.instagram.com/p/DfZ86gyoM1l/"
+  },
+  {
    "red": "linkedin",
    "autor": "José A. Ruiz San Román (UCM)",
    "fecha": "2026-10-31",
    "titulo": "Intensos días de trabajo en la Universidad del Azuay con el proyecto RIUDICC",
    "imagen": "img/menciones/linkedin-ucm-azuay.jpg",
    "url": "https://lnkd.in/p/eZX89ZDf"
+  },
+  {
+   "red": "instagram",
+   "autor": "UNICARIBE",
+   "fecha": "2026-10-30",
+   "titulo": "UNICARIBE fortalece su proyección internacional en el III Encuentro de la RIUDICC",
+   "imagen": "img/menciones/instagram-unicaribe-encuentro.jpg",
+   "url": "https://www.instagram.com/p/DfH2JAvlsW2/"
+  },
+  {
+   "red": "instagram",
+   "autor": "Elisa Elena González (UNICARIBE)",
+   "fecha": "2026-10-30",
+   "titulo": "El III Encuentro Internacional de RIUDICC, un espacio para compartir experiencias y fortalecer alianzas",
+   "imagen": "img/menciones/instagram-elisa-gonzalez-encuentro.jpg",
+   "url": "https://www.instagram.com/p/DfH96QNETdE/"
   },
   {
    "red": "facebook",
@@ -714,6 +746,14 @@ window.COMUNIDAD={
    "titulo": "La movilidad académica y la investigación conjunta marcan la agenda de RIUDICC en Cuenca",
    "imagen": "img/menciones/facebook-uda.jpg",
    "url": "https://www.facebook.com/share/p/1MrE5X2R93/"
+  },
+  {
+   "red": "instagram",
+   "autor": "Universidad del Azuay",
+   "fecha": "2026-10-27",
+   "titulo": "La movilidad académica y la investigación conjunta marcan la agenda de RIUDICC en Cuenca",
+   "imagen": "img/menciones/instagram-uda-oficial-cuenca.jpg",
+   "url": "https://www.instagram.com/p/DfAvdSgmY-j/"
   },
   {
    "red": "instagram",
