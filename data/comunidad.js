@@ -457,7 +457,7 @@ window.COMUNIDAD={
    "tipo": "Nota",
    "anio": 2026,
    "fecha": "2026-11-18",
-   "titulo": "Internacionalización de la educación superior desde los confines de México: experiencias, retos y perspectivas de la Universidad de Ciencias y Artes de Chiapas",
+   "titulo": "Internacionalización de la educación superior desde los confines de México: experiencias, retos y perspectivas de la Universidad Autónoma de Ciencias y Artes de Chiapas",
    "autores": [
     "Hugo Saúl Rojas-Pérez",
     "Carolina Orantes-García"
