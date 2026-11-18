@@ -604,7 +604,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italia",
     "obc_c_do": "República Dominicana",
-    "obc_c_mx": "México"
+    "obc_c_mx": "México",
+    "news_source": "Fuente",
+    "news_source_link": "Leer la noticia original"
   },
   "en": {
     "lang_name": "English",
@@ -1206,7 +1208,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italy",
     "obc_c_do": "Dominican Republic",
-    "obc_c_mx": "Mexico"
+    "obc_c_mx": "Mexico",
+    "news_source": "Source",
+    "news_source_link": "Read the original article"
   },
   "it": {
     "lang_name": "Italiano",
@@ -1808,7 +1812,9 @@ window.INTERFAZ={
     "obc_c_ec": "Ecuador",
     "obc_c_it": "Italia",
     "obc_c_do": "Repubblica Dominicana",
-    "obc_c_mx": "Messico"
+    "obc_c_mx": "Messico",
+    "news_source": "Fonte",
+    "news_source_link": "Leggi l'articolo originale"
   },
   "fr": {
     "lang_name": "Français",
@@ -2410,6 +2416,8 @@ window.INTERFAZ={
     "obc_c_ec": "Équateur",
     "obc_c_it": "Italie",
     "obc_c_do": "République dominicaine",
-    "obc_c_mx": "Mexique"
+    "obc_c_mx": "Mexique",
+    "news_source": "Source",
+    "news_source_link": "Lire l'article original"
   }
 };

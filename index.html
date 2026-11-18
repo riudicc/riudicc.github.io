@@ -1733,8 +1733,8 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261116a"></script>
-<script src="data/contenido.js?v=20261109f"></script>
+<script src="data/interfaz.js?v=20261118b"></script>
+<script src="data/contenido.js?v=20261118b"></script>
 <script src="data/ofertas.js?v=20261109f"></script>
 <script src="data/comunidad.js?v=20261118a"></script>
 <script src="data/observatorio.js?v=20261109f"></script>
@@ -1942,7 +1942,8 @@ var pintarNoticia = function(n){
     inst.map(function(s){ return '<span class="chip">' + esc(s) + '</span>'; }).join("") + '</div>' +
     '<div' + langAttr(x) + ' style="display:grid;gap:22px"><h1>' + esc(x.title) + '</h1><p class="lead muted">' + esc(x.contentDescription) + '</p>' +
     (n.imagenes[0] ? foto(n.imagenes[0].url, n.imagenes[0].alt, n.paisCode, n.ciudad) : "") +
-    '<div class="content">' + limpiar(x.content || "") + '</div></div>' +
+    '<div class="content">' + limpiar(x.content || "") + '</div>' +
+    (n.fuente && n.fuente.url ? '<p class="small muted news-src">' + esc(t("news_source")) + ': ' + esc(n.fuente.nombre) + (n.fuente.autor ? ' (' + esc(n.fuente.autor) + ')' : '') + ' · <a href="' + esc(n.fuente.url) + '" target="_blank" rel="noopener">' + esc(t("news_source_link")) + ' ↗</a></p>' : '') + '</div>' +
     (n.imagenes.length > 1 ? '<div class="gallery">' + n.imagenes.slice(1).map(function(im){ return foto(im.url, im.alt, n.paisCode, n.ciudad); }).join("") + '</div>' : "");
   return x.title;
 };

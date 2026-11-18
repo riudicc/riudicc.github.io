@@ -1235,6 +1235,48 @@ window.RIUDICC={
      "content": "<p>L'internationalisation de l'enseignement supérieur est un pilier essentiel du développement de compétences mondiales chez les étudiants, les enseignants et le personnel administratif. Elle renforce la collaboration entre établissements et promeut des valeurs fondamentales comme l'inclusion et la diversité.</p><p>Dans ce contexte, le Guatemala accueillera la deuxième rencontre du Réseau international d'universités pour le développement inclusif et l'échange scientifique et culturel (RIUDICC), cofinancée par l'Union européenne. L'événement vise à renforcer un réseau de collaboration durable qui encourage les bonnes pratiques d'internationalisation, favorise les alliances stratégiques et accroît les possibilités de financement des programmes de mobilité académique.</p><p>Le choix du Guatemala revêt une signification particulière. Pays situé au carrefour de cultures, de traditions et de réalités sociales diverses, il offre un cadre riche pour le dialogue interculturel et l'échange académique régional.</p><p>Cette rencontre marque une étape importante : c'est le premier événement de RIUDICC cofinancé par l'Union européenne, qui s'affirme comme une plateforme à fort impact pour l'internationalisation inclusive de l'enseignement supérieur.</p><p>Elle cherche aussi à renforcer les bonnes pratiques de gestion de la coopération internationale, en mettant l'accent sur l'inclusion, la durabilité et le respect de la diversité culturelle. Ces actions s'inscrivent dans les Objectifs de développement durable (ODD) des Nations unies, qui reconnaissent l'éducation comme moteur de démocratie, d'équité et de transformation sociale.</p>"
     }
    }
+  },
+  {
+   "slug": "uda-iii-encuentro-internacional-internacionalizacion",
+   "fecha": "2026-10-27",
+   "pais": "Ecuador",
+   "paisCode": "EC",
+   "ciudad": "Cuenca",
+   "tags": [
+    "internacionalización",
+    "encuentro internacional",
+    "universidad del azuay",
+    "erasmus+",
+    "objetivos de desarrollo sostenible"
+   ],
+   "imagenes": [
+    {
+     "url": "img/noticias/uda-iii-encuentro-internacionalizacion.jpg",
+     "alt": "Participantes del III Encuentro Internacional Universitario de Internacionalización de RIUDICC en el auditorio de la Universidad del Azuay.",
+     "url_original": "https://www.uazuay.edu.ec/sites/default/files/public/uazuay-RIUDICC.webp"
+    }
+   ],
+   "enlaces": [],
+   "instituciones": [
+    "universidad_del_azuay"
+   ],
+   "fuente": {
+    "nombre": "Universidad del Azuay",
+    "autor": "Andrea Vega M.",
+    "url": "https://www.uazuay.edu.ec/noticias/iii-encuentro-internacional-universitario-internacionalizacion"
+   },
+   "textos": {
+    "es": {
+     "title": "La Universidad del Azuay inaugura el III Encuentro Internacional Universitario de Internacionalización",
+     "contentDescription": "Autoridades, docentes, estudiantes y representantes de la red RIUDICC se reunieron en Cuenca para abrir tres días de trabajo sobre una internacionalización más inclusiva.",
+     "content": "<p>La Universidad del Azuay, en Cuenca (Ecuador), acogió el 27 de octubre de 2026 la inauguración del III Encuentro Internacional Universitario de Internacionalización, organizado en el marco de RIUDICC y alineado con los Objetivos de Desarrollo Sostenible. Participaron autoridades, docentes y estudiantes de la UDA, representantes de las universidades de la red, ponentes nacionales e internacionales y público en general.</p><p>En la apertura, el rector de la Universidad del Azuay, Francisco Salgado, subrayó el valor de la cooperación académica internacional en el marco de Erasmus+ y describió a las universidades de la red como comunidades vivas que, colaborando, pueden imaginar y construir un futuro mejor.</p><p>Ximena Córdova, presidenta del Consejo de Aseguramiento de la Calidad de la Educación Superior (CACES) de Ecuador, presentó la internacionalización como un componente esencial de la calidad educativa, por las oportunidades de movilidad e intercambio que abre a los estudiantes.</p><p>La vicerrectora académica de la UDA, Genoveva Malo, celebró el encuentro, destacó el papel de la ciencia, la cultura y el arte en la vida universitaria y el de las redes de colaboración, e invitó a aprovechar estos días para un diálogo profundo que contribuya a un mundo más humano.</p><p>El encuentro continuó los días 28 y 29 de octubre con sesiones de trabajo de la red.</p>"
+    },
+    "en": {
+     "title": "Universidad del Azuay opens the III International University Meeting on Internationalisation",
+     "contentDescription": "Authorities, lecturers, students and representatives of the RIUDICC network met in Cuenca to open three days of work on a more inclusive internationalisation.",
+     "content": "<p>On 27 October 2026, the Universidad del Azuay in Cuenca (Ecuador) hosted the opening of the III International University Meeting on Internationalisation, organised within RIUDICC and aligned with the Sustainable Development Goals. Authorities, lecturers and students of the UDA, representatives of the network's universities, national and international speakers and the general public took part.</p><p>Opening the event, UDA rector Francisco Salgado underlined the value of international academic cooperation under Erasmus+ and described the network's universities as living communities that, by working together, can imagine and build a better future.</p><p>Ximena Córdova, president of Ecuador's Higher Education Quality Assurance Council (CACES), presented internationalisation as an essential part of educational quality, given the mobility and exchange opportunities it opens for students.</p><p>UDA vice-rector for academic affairs Genoveva Malo welcomed the meeting, highlighted the role of science, culture and the arts in university life and of collaboration networks, and encouraged participants to use these days for in-depth dialogue towards a more humane world.</p><p>The meeting continued on 28 and 29 October with working sessions of the network.</p>"
+    }
+   }
   }
  ],
  "idiomas": {
