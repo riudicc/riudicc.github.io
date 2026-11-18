@@ -343,7 +343,7 @@ window.COMUNIDAD={
  "produccion": [
   {
    "slug": "madariaga-2026-perspectiva-chiapas",
-   "tipo": "Ensayo",
+   "tipo": "Nota de reflexión",
    "anio": 2026,
    "fecha": "2026-11-15",
    "titulo": "Perspectiva educativa en Chiapas, México, ante sectores vulnerables",
@@ -454,7 +454,7 @@ window.COMUNIDAD={
   },
   {
    "slug": "rojas-orantes-2026-internacionalizacion-unicach",
-   "tipo": "Nota",
+   "tipo": "Nota de reflexión",
    "anio": 2026,
    "fecha": "2026-11-18",
    "titulo": "Internacionalización de la educación superior desde los confines de México: experiencias, retos y perspectivas de la Universidad Autónoma de Ciencias y Artes de Chiapas",
