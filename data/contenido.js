@@ -726,7 +726,7 @@ window.RIUDICC={
    "logo": "img/logos/11_es_ife.png"
   }
  ],
- "noticias": [json
+ "noticias": [
   {
    "slug": "prueba",
    "fecha": "2026-11-21",
