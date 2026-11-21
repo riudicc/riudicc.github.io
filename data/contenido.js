@@ -726,7 +726,25 @@ window.RIUDICC={
    "logo": "img/logos/11_es_ife.png"
   }
  ],
- "noticias": [
+ "noticias": [json
+  {
+   "slug": "prueba",
+   "fecha": "2026-11-21",
+   "pais": "República Dominicana",
+   "paisCode": "DO",
+   "ciudad": "Santo Domingo",
+   "tags": [],
+   "imagenes": [],
+   "enlaces": [],
+   "instituciones": [],
+   "textos": {
+    "es": {
+     "title": "Prueba",
+     "contentDescription": "Prueba",
+     "content": "<p>Prueba</p>"
+    }
+   }
+  },
   {
    "slug": "buenas-expectativas-america-latina-caribe-programas-europeos-movilidad",
    "fecha": "2026-07-23",
