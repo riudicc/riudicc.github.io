@@ -728,6 +728,24 @@ window.RIUDICC={
  ],
  "noticias": [
   {
+   "slug": "prueba",
+   "fecha": "2026-11-21",
+   "pais": "España",
+   "paisCode": "ES",
+   "ciudad": "Madrid",
+   "tags": [],
+   "imagenes": [],
+   "enlaces": [],
+   "instituciones": [],
+   "textos": {
+    "es": {
+     "title": "prueba",
+     "contentDescription": "prueba",
+     "content": "<p>prueba</p>"
+    }
+   }
+  },
+  {
    "slug": "buenas-expectativas-america-latina-caribe-programas-europeos-movilidad",
    "fecha": "2026-07-23",
    "pais": "España",
