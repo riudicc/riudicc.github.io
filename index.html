@@ -2457,7 +2457,7 @@ var pintarContacto = function(){
   $("#mxList").innerHTML = instituciones.filter(function(i){ return i.tipo === "universidad"; }).map(function(i){
     var x = tx(i), mo = microObs(i.slug);
     return '<li' + (mo ? ' class="on"' : '') + '><span class="mx-name"><b>' + esc(x.shortName || x.name) + '</b><span class="small muted">' + esc(x.name) + ' · ' + esc(nombrePais(i.paisCode, i.pais)) + '</span></span>' +
-      (mo ? '<span class="mx-act">' + (mo.aqui ? '<a href="#moSec" class="mx-here">' + esc(t("mx_here")) + '</a>' : '') + '<a class="btn ghost" href="' + esc(mo.url) + '" target="_blank" rel="noopener">' + esc(t("mx_open")) + ' ↗</a></span>'
+      (mo ? '<span class="mx-act">' + '<a class="btn ghost" href="' + esc(mo.url) + '" target="_blank" rel="noopener">' + esc(t("mx_open")) + ' ↗</a></span>'
           : '<span class="small muted">' + esc(t("mx_soon")) + '</span>') + '</li>';
   }).join("");
 };
