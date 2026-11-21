@@ -3083,7 +3083,11 @@ function mostrar(sinScroll){
   } else if (h.indexOf("blog-") === 0){
     var b = entradas().filter(function(x){ return blogId(x.slug) === h; })[0];
     if (b){ vista = "entrada"; titulo = pintarEntrada(b); } else vista = "noencontrada";
-  } else if (VISTAS.indexOf(vista) < 0) vista = "noencontrada";
+  } else if (VISTAS.indexOf(vista) < 0){
+    /* ancla a una sección interna (p. ej. #moSec): se abre la página que la contiene y se baja hasta ella */
+    var interna = /^[A-Za-z][\w-]*$/.test(h) ? document.getElementById(h) : null, madre = interna && interna.closest("section.view[data-view]");
+    if (madre){ vista = madre.getAttribute("data-view"); ancla = h; } else vista = "noencontrada";
+  }
   $$("section.view").forEach(function(s){ s.classList.toggle("active", s.getAttribute("data-view") === vista); });
   $("#asFab").hidden = vista === "asistente";
   /* Algunos móviles Android dejan restos de la página anterior al cambiar de vista: se fuerza un repintado completo */
