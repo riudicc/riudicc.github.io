@@ -673,7 +673,7 @@ p,li,dd{max-width:72ch}
 .globe-wrap{position:relative}
 .map-tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:var(--fs-xs);padding:5px 9px;border-radius:6px;white-space:nowrap;z-index:2}
 .lg-dot{background:var(--card);border:2px solid var(--ink);width:11px;height:11px}
-.lg-line{border-top:2px solid var(--ink);opacity:.5}
+.lg-line{border-top:0;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--sky),var(--coral));opacity:1;vertical-align:middle}
 /* ===== Paleta sobria: tinta + un acento; el coral solo para urgencias ===== */
 .note{border-left:4px solid var(--sky);background:color-mix(in srgb,var(--sky) 6%,var(--card))}
 .mt-note{background:var(--sky-soft)}
@@ -1733,8 +1733,8 @@ window.goatcounter = {no_onload: true};
 window.CONTAR = /(^|\.)riudicc\.github\.io$|(^|\.)riudicc\.org$/.test(location.hostname);
 if (window.CONTAR){ var gc = document.createElement("script"); gc.async = true; gc.src = "https://gc.zgo.at/count.js"; gc.setAttribute("data-goatcounter", "https://riudicc.goatcounter.com/count"); document.head.appendChild(gc); }
 </script>
-<script src="data/interfaz.js?v=20261118b"></script>
-<script src="data/contenido.js?v=20261118b"></script>
+<script src="data/interfaz.js?v=20261121a"></script>
+<script src="data/contenido.js?v=20261121a"></script>
 <script src="data/ofertas.js?v=20261109f"></script>
 <script src="data/comunidad.js?v=20261118e"></script>
 <script src="data/observatorio.js?v=20261109f"></script>
@@ -2548,7 +2548,7 @@ var mezclar = function(a, b, k){
 };
 var MAPA = (function(){
   var canvas = $("#globe"), tip = $("#mapTip"), ctx, W = 0, H = 0, dpr = 1;
-  var paises = [], porCodigo = {}, rot = [-38, 14], auto = true, frame = null, fase = 0;
+  var paises = [], porCodigo = {}, rot = [-38, 14], auto = true, frame = null, fase = 0, tiempo = 0;
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var RAD = Math.PI / 180;
   /* --- datos del contorno --- */
@@ -2567,7 +2567,20 @@ var MAPA = (function(){
   var centroide = function(p){ var big = p.rings.slice().sort(function(a, b){ return b.length - a.length; })[0], sx = 0, sy = 0; big.forEach(function(c){ sx += c[0]; sy += c[1]; }); return [sx / big.length, sy / big.length]; };
   var dentro = function(pt, ring){ var c = false; for (var i = 0, j = ring.length - 1; i < ring.length; j = i++){ var a = ring[i], b = ring[j]; if (((a[1] > pt[1]) !== (b[1] > pt[1])) && (pt[0] < (b[0] - a[0]) * (pt[1] - a[1]) / (b[1] - a[1]) + a[0])) c = !c; } return c; };
   var unis = function(){ return D.socios.concat(D.asociados).filter(function(s){ return s.slug !== "ife_europe"; }); };
-  var ucm = function(){ return D.socios.filter(function(s){ return s.slug === "universidad_complutense_madrid"; })[0]; };
+  /* una ruta por cada par de países de la red; las universidades se alternan para que todas participen */
+  var rutasCache = null;
+  var rutasRed = function(U){
+    if (rutasCache) return rutasCache;
+    var por = {}, orden = [];
+    U.forEach(function(s){ var k = s.paisCode || s.pais; if (!por[k]){ por[k] = []; orden.push(k); } por[k].push(s); });
+    var r = [], n = 0;
+    for (var a = 0; a < orden.length; a++) for (var b = a + 1; b < orden.length; b++){
+      var A = por[orden[a]], B = por[orden[b]];
+      r.push([A[n % A.length], B[(n + 1) % B.length]]); n++;
+    }
+    for (var i = r.length - 1; i > 0; i--){ var j = (i * 7 + 3) % (i + 1), x = r[i]; r[i] = r[j]; r[j] = x; } /* mezcla fija: los viajes no siguen el orden de la lista */
+    return (rutasCache = r);
+  };
   /* --- proyecciones --- */
   var R = 0, cx = 0, cy = 0;
   var ortho = function(lon, lat){
@@ -2649,21 +2662,36 @@ var MAPA = (function(){
       p.rings.forEach(function(r){ ctx.beginPath(); if (trazarAnillo(r)){ ctx.fill(); ctx.strokeStyle = fondo; ctx.lineWidth = 0.6; ctx.stroke(); } });
     });
     if (porCodigo[glSel]){ ctx.strokeStyle = tinta; ctx.lineWidth = 2.2; porCodigo[glSel].rings.forEach(function(r){ ctx.beginPath(); if (trazarAnillo(r)) ctx.stroke(); }); }
-    /* vínculos con la coordinación */
-    var c = ucm(), U = unis();
-    ctx.strokeStyle = tinta; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.2;
-    var arcos = U.filter(function(s){ return s !== c; }).map(function(s){ return arco([s.lng, s.lat], [c.lng, c.lat]); });
-    arcos.forEach(function(pts){ ctx.beginPath(); var on = false; pts.forEach(function(q){ if (q.v){ if (on) ctx.lineTo(q.x, q.y); else ctx.moveTo(q.x, q.y); on = true; } else on = false; }); ctx.stroke(); });
+    /* intercambios entre universidades de la red: rutas entre todos los países, en ambos sentidos */
+    var U = unis(), rutas = rutasRed(U);
+    var trazos = rutas.map(function(r){ return arco([r[0].lng, r[0].lat], [r[1].lng, r[1].lat]); });
+    var linea2 = function(pts, a, b){ ctx.beginPath(); var on = false; for (var k = a; k <= b; k++){ var q = pts[k]; if (q && q.v){ if (on) ctx.lineTo(q.x, q.y); else ctx.moveTo(q.x, q.y); on = true; } else on = false; } ctx.stroke(); };
+    ctx.strokeStyle = tinta; ctx.lineWidth = 1; ctx.globalAlpha = 0.16;
+    trazos.forEach(function(pts){ linea2(pts, 0, pts.length - 1); });
     ctx.globalAlpha = 1;
-    if (!reduce){ ctx.fillStyle = acento; arcos.forEach(function(pts, i){ var k = Math.floor(((fase + i * 0.13) % 1) * (pts.length - 1)), q = pts[k]; if (q && q.v){ ctx.beginPath(); ctx.arc(q.x, q.y, 2.4, 0, 2 * Math.PI); ctx.fill(); } }); }
+    if (!reduce){
+      trazos.forEach(function(pts, i){
+        var per = 5.2 + (i * 1.37) % 3.1, t0 = tiempo + i * 0.83, vuelta = Math.floor(t0 / per), k = (t0 % per) / per;
+        var dur = 0.62; if (k > dur) return;               /* cada ruta descansa un rato entre viaje y viaje */
+        var u = k / dur, ida = (vuelta + i) % 2 === 0, n = pts.length - 1;
+        var e = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
+        var cab = Math.round((ida ? e : 1 - e) * n), cola = 9, col = ida ? acento : coral;
+        var env = Math.sin(Math.PI * u);
+        ctx.strokeStyle = col; ctx.lineWidth = 1.6; ctx.globalAlpha = 0.55 * env;
+        linea2(pts, 0, n);
+        ctx.globalAlpha = 1; ctx.lineWidth = 2.4; ctx.lineCap = "round";
+        var a = ida ? Math.max(0, cab - cola) : cab, b = ida ? cab : Math.min(n, cab + cola);
+        ctx.globalAlpha = 0.9 * env; linea2(pts, a, b); ctx.lineCap = "butt";
+        var q = pts[cab]; if (q && q.v){ ctx.globalAlpha = env; ctx.beginPath(); ctx.arc(q.x, q.y, 3, 0, 2 * Math.PI); ctx.fillStyle = col; ctx.fill(); }
+        ctx.globalAlpha = 1;
+      });
+    }
     /* universidades */
     puntosUni = [];
     U.forEach(function(s){
       var q = glVista === "globo" ? ortho(s.lng, s.lat) : plano(s.lng, s.lat);
       if (!q.v) return;
-      var r = s === c ? 6 : 4.5;
-      ctx.beginPath(); ctx.arc(q.x, q.y, r, 0, 2 * Math.PI); ctx.fillStyle = fondo; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = tinta; ctx.stroke();
-      if (s === c){ ctx.beginPath(); ctx.arc(q.x, q.y, 2.2, 0, 2 * Math.PI); ctx.fillStyle = tinta; ctx.fill(); }
+      ctx.beginPath(); ctx.arc(q.x, q.y, 4.5, 0, 2 * Math.PI); ctx.fillStyle = fondo; ctx.fill(); ctx.lineWidth = 2; ctx.strokeStyle = tinta; ctx.stroke();
       puntosUni.push({x: q.x, y: q.y, s: s});
     });
     if (glVista === "globo"){ ctx.restore(); ctx.beginPath(); ctx.arc(cx, cy, R, 0, 2 * Math.PI); ctx.strokeStyle = linea; ctx.lineWidth = 1; ctx.stroke(); }
@@ -2674,7 +2702,7 @@ var MAPA = (function(){
     var paso = function(tm){
       var dt = ultimo === null ? 0 : tm - ultimo; ultimo = tm;
       if (glVista === "globo" && auto) rot[0] -= dt * 0.006;
-      fase = (fase + dt / 4000) % 1;
+      fase = (fase + dt / 4000) % 1; tiempo += dt / 1000;
       dibujar();
       frame = (auto && glVista === "globo") || !reduce ? requestAnimationFrame(paso) : null;
     };
