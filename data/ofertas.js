@@ -327,27 +327,6 @@ window.OFERTAS=[
   "apoyos_inclusion": false
  },
  {
-  "id": "mescyt-generacion-steam-2-0",
-  "estado": "Aprobada",
-  "tipo_registro": "convocatoria",
-  "origen": "agente",
-  "titulo": "Generación STEAM 2.0",
-  "entidad": "MESCyT – Portal Nacional de Becas",
-  "tipo": "Beca",
-  "pais": "Varios",
-  "nivel": "Todos",
-  "modalidad": "Presencial",
-  "area": "STEAM",
-  "fecha_limite": "2026-12-16",
-  "plazas": "445 ofertas",
-  "cubre": "",
-  "descripcion": "Convocatoria de becas internacionales del Gobierno dominicano marcada como 'Próximamente' en becas.gob.do (cierre indicado: 16 de diciembre de 2026; fecha de apertura no indicada). La ficha no detalla países, niveles, cobertura ni requisitos: revisar el portal cuando abra.",
-  "enlace": "https://becas.gob.do/convocatorias/50",
-  "contacto": "",
-  "apoyos_inclusion": false,
-  "solo_pais": "DO"
- },
- {
   "id": "erasmus-mundus-europubhealth-2027",
   "estado": "Aprobada",
   "tipo_registro": "convocatoria",
