@@ -2,7 +2,7 @@
    - Para añadir una convocatoria, copia una entrada existente, cámbiala y súbela (ver README.md).
    - Formato: lo que va entre "window.OFERTAS=" y el ";" final es JSON válido.
    - Las convocatorias vencidas se ocultan solas; se pueden borrar de vez en cuando.
-   Última revisión: 2026-11-07.
+   Última revisión: 2026-11-24.
    - tipo_registro "programa": becas y movilidades que abren cada año. No tienen fecha_limite;
      el campo "apertura" dice cuándo suelen abrir. Revisarlas una vez al año. */
 window.OFERTAS=[
@@ -127,6 +127,26 @@ window.OFERTAS=[
   "apoyos_inclusion": false
  },
  {
+  "id": "auip-andaluzas-iberoamericanas-2027-segundo-plazo",
+  "estado": "Aprobada",
+  "tipo_registro": "convocatoria",
+  "origen": "agente",
+  "titulo": "Becas de Movilidad entre Universidades Andaluzas e Iberoamericanas AUIP 2027 (segundo plazo)",
+  "entidad": "AUIP / Junta de Andalucía",
+  "tipo": "Estancia de investigación",
+  "pais": "España (Andalucía)",
+  "nivel": "Todos",
+  "modalidad": "Presencial",
+  "area": "Todas las áreas (vinculadas al postgrado)",
+  "fecha_limite": "2027-04-12",
+  "plazas": "",
+  "cubre": "Hasta 1,500 € para movilidades entre América Latina y Andalucía; hasta 700 € entre Andalucía y Portugal.",
+  "descripcion": "Para profesores, investigadores, gestores y estudiantes de postgrado de instituciones miembro de la AUIP (consulta en tu oficina de Relaciones Internacionales si tu universidad es miembro), en movilidades entre América Latina y universidades andaluzas. Estancias de 20 días a 3 meses que inicien entre el 1 de julio y el 30 de noviembre de 2027. Segundo plazo: 12 de abril de 2027 (hora de Madrid); confirma la fecha exacta en las bases de la AUIP.",
+  "enlace": "https://auip.org/es/becas-auip/3108-becas-auip340",
+  "contacto": "",
+  "apoyos_inclusion": false
+ },
+ {
   "id": "auip-magallanes-2027-primer-plazo",
   "estado": "Aprobada",
   "tipo_registro": "convocatoria",
@@ -143,6 +163,26 @@ window.OFERTAS=[
   "cubre": "Movilidad entre países iberoamericanos: 1,300 € y pasaje gestionado por la AUIP; entre España y Portugal, hasta 700 €. Solo desplazamiento.",
   "descripcion": "Para profesores, investigadores, gestores de postgrado y estudiantes de postgrado de instituciones miembro de la AUIP (origen y destino deben estar al día con sus cuotas; consulta en tu oficina de Relaciones Internacionales si tu universidad es miembro). Estancias de 20 días a 3 meses que inicien entre el 1 de febrero y el 30 de junio de 2027, con plan de trabajo acordado con el destino. Primer plazo: 9 de noviembre de 2026 a las 23:59 (hora de Madrid); segundo plazo: 19 de abril de 2027.",
   "enlace": "https://auip.org/es/becas-auip/3106-becas-auip339",
+  "contacto": "",
+  "apoyos_inclusion": false
+ },
+ {
+  "id": "auip-magallanes-2027-segundo-plazo",
+  "estado": "Aprobada",
+  "tipo_registro": "convocatoria",
+  "origen": "agente",
+  "titulo": "Programa Magallanes de Movilidad Académica Internacional AUIP 2027 (segundo plazo)",
+  "entidad": "Asociación Universitaria Iberoamericana de Postgrado (AUIP)",
+  "tipo": "Estancia de investigación",
+  "pais": "Iberoamérica (España, Portugal y América Latina)",
+  "nivel": "Todos",
+  "modalidad": "Presencial",
+  "area": "Todas las áreas (vinculadas al postgrado)",
+  "fecha_limite": "2027-04-19",
+  "plazas": "",
+  "cubre": "Movilidad entre países iberoamericanos: 1,300 € y pasaje gestionado por la AUIP; entre España y Portugal, hasta 700 €. Solo desplazamiento.",
+  "descripcion": "Para profesores, investigadores, gestores de postgrado y estudiantes de postgrado de instituciones miembro de la AUIP (origen y destino deben estar al día con sus cuotas; consulta en tu oficina de Relaciones Internacionales si tu universidad es miembro). No financia movilidades entre universidades del mismo país. Estancias de 20 días a 3 meses que inicien entre el 1 de julio y el 30 de noviembre de 2027, con plan de trabajo acordado con el destino. Cierra el 19 de abril de 2027 a las 23:59 (hora de Madrid). 120 becas en total entre los dos plazos.",
+  "enlace": "https://auip.org/images/stories/DATOS/PDF/2027/Becas_AUIP/bases_movilidad_magallanes_2027.pdf",
   "contacto": "",
   "apoyos_inclusion": false
  },
@@ -191,17 +231,17 @@ window.OFERTAS=[
   "estado": "Aprobada",
   "tipo_registro": "convocatoria",
   "origen": "agente",
-  "titulo": "Beca MEXT por Recomendación Universitaria 2027 – Universidad Ritsumeikan (Ciencias de la Vida; Ciencia e Ingeniería)",
+  "titulo": "Beca MEXT por Recomendación Universitaria 2027 – Universidad Ritsumeikan (Graduate School of Life Sciences)",
   "entidad": "Gobierno de Japón (MEXT) / Universidad Ritsumeikan",
   "tipo": "Beca",
   "pais": "Japón",
   "nivel": "Postgrado",
   "modalidad": "Presencial",
-  "area": "Ciencias de la vida; Ciencia e ingeniería",
-  "fecha_limite": "",
+  "area": "Ciencias de la vida",
+  "fecha_limite": "2026-11-26",
   "plazas": "",
   "cubre": "Beca completa (\"full-ride\") del Gobierno de Japón; detalles en el resumen oficial de la beca",
-  "descripcion": "Maestría y/o doctorado con ingreso en septiembre de 2027, solo en las Graduate Schools of Life Sciences y Science and Engineering. Las bases 2027 se publicarán entre noviembre y diciembre de 2026 y la postulación se estima de fines de noviembre a fines de diciembre; fecha límite aún no confirmada en la página oficial. Requisitos: nacionalidad de un país con relaciones diplomáticas con Japón, nacido en o después del 2 de abril de 1991, GPA ≥ 2.30/3.00 (escala MEXT) e inglés CEFR B2; no contactar a profesores antes de que salgan las bases.",
+  "descripcion": "Maestría y/o doctorado con ingreso en septiembre de 2027 en la Graduate School of Life Sciences. Plazo de solicitud: del 17 al 26 de noviembre de 2026 (hora de Japón). Las bases de la Graduate School of Science and Engineering aún no se han publicado. Requisitos: nacionalidad de un país con relaciones diplomáticas con Japón, haber nacido el 2 de abril de 1992 o después, GPA ≥ 2.30/3.00 (escala MEXT) e inglés CEFR B2 o estudios previos en inglés. El plan de investigación debe redactarlo la persona solicitante, sin IA generativa.",
   "enlace": "https://en.ritsumei.ac.jp/admissions/monbukagakusho-university-recommendation/",
   "contacto": "",
   "apoyos_inclusion": false
@@ -218,10 +258,10 @@ window.OFERTAS=[
   "nivel": "Postgrado",
   "modalidad": "Presencial",
   "area": "Ciencia e ingeniería",
-  "fecha_limite": "",
+  "fecha_limite": "2026-11-22",
   "plazas": "",
   "cubre": "147,000 JPY/mes (maestría) o 148,000 JPY/mes (doctorado), exención de matrícula y cuota de ingreso; pasaje según condiciones",
-  "descripcion": "Maestría y doctorado en inglés con ingreso en septiembre; promedio ≥2.30/3.00, menor de 34 años, inglés B2+, nacionalidad de un país con relaciones diplomáticas con Japón (RD las tiene), aunque al menos el 75 % de los nominados debe venir de países designados por MEXT. La página oficial indica solicitudes de mediados de septiembre a finales de noviembre de 2026 sin fecha exacta: fecha límite no confirmada (está en la guía IGP(A)).",
+  "descripcion": "Maestría y doctorado en inglés con ingreso en septiembre de 2027; promedio ≥2.30/3.00, menor de 34 años, inglés B2+, nacionalidad de un país con relaciones diplomáticas con Japón (RD las tiene), aunque al menos el 75 % de los nominados debe venir de países designados por MEXT. Solicitudes del 9 de septiembre al 22 de noviembre de 2026 (23:59, hora de Japón); la carta de aceptación del supervisor debía enviarse antes del 15 de noviembre.",
   "enlace": "https://www.titech.ac.jp/english/international-student-exchange/prospective-students/scholarships/mext-university-general",
   "contacto": "",
   "apoyos_inclusion": false
@@ -339,11 +379,11 @@ window.OFERTAS=[
   "nivel": "Postgrado",
   "modalidad": "Presencial",
   "area": "Medio ambiente y gestión de recursos naturales",
-  "fecha_limite": "",
+  "fecha_limite": "2027-01-31",
   "plazas": "",
   "cubre": "992 €/mes, seguro médico, de accidentes y de responsabilidad civil, ayuda de viaje y, en ciertos casos, subsidio de alquiler y familiar",
-  "descripcion": "Doble titulación en México y Alemania (inglés y español). RD figura en la lista de países elegibles EPOS. Requisitos EPOS: licenciatura (normalmente 4 años) con buenas notas, al menos 2 años de experiencia profesional relacionada, título de no más de 6 años. La página de becas de TH Köln indica plazo el '31 de enero de cada año', pero la página de admisión aún muestra el ciclo anterior: fecha 2027 sin confirmar.",
-  "enlace": "https://www.th-koeln.de/en/spatial-development-and-infrastructure-systems/scholarships_108947.php",
+  "descripcion": "Doble titulación en México y Alemania (inglés y español). RD figura en la lista de países elegibles EPOS. Requisitos EPOS: licenciatura (normalmente 4 años) con buenas notas, al menos 2 años de experiencia profesional relacionada, título de no más de 6 años. TH Köln indica que el plazo para becarios DAAD, SECIHTI y sin beca es el 31 de enero de cada año (en el ciclo anterior la ventana fue del 2 al 31 de enero); confirma las fechas 2027 en la página de admisión o escribiendo a info-enrem@th-koeln.de.",
+  "enlace": "https://www.th-koeln.de/en/spatial-development-and-infrastructure-systems/enrem-double-degree-masters-program--application_115722.php",
   "contacto": "",
   "apoyos_inclusion": false
  },
